@@ -1,0 +1,609 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 5.0">
+<title>BBP-012-r0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+APPROVED</title>
+<meta NAME="Template"
+CONTENT="C:\WINDOWS\Desktop\Duties  up to 13 April 99\English TP.dot">
+</head>
+
+<body background="../../../images/approved%20mark.jpg">
+
+<B><FONT FACE="Arial" SIZE=5>
+
+<table BORDER="1" CELLSPACING="1" CELLPADDING="7" WIDTH="550" height="1">
+  <tr>
+    <td WIDTH="52" VALIGN="TOP" ROWSPAN="6" HEIGHT="1">
+    <img border="0" src="../../../images/mpis-1.gif" width="59" height="203"></td>
+    <td WIDTH="458" VALIGN="TOP" COLSPAN="2" HEIGHT="1">
+      <table border="0" width="101%">
+        <tr>
+          <td width="40%"><font face="Arial" size="5"><b>
+          Protection</b></font></td>
+          <td width="100%" align="right"><x1>
+            <font FACE="Arial" SIZE="5"><b>Technical Procedure</b></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td WIDTH="276" VALIGN="TOP" ROWSPAN="3" HEIGHT="1"><b><font size="1"><span style="font-family: Arial">Equipment:</span></font></b><font FACE="Arial" SIZE="1"><br>
+      </font><b><font FACE="Arial" SIZE="2">Bus Bar Relay<br>
+    7SS10<br>
+    Siemens</font></b></td>
+    <td WIDTH="157" VALIGN="TOP" HEIGHT="1">
+      <p ALIGN="LEFT"><font SIZE="1" face="Arial">Document No:&nbsp;&nbsp;</font><font size="2"><b>BBP</b></font><b><font face="Arial" size="2">-012-r0</font></b></td>
+  </tr>
+  <tr>
+    <td WIDTH="157" VALIGN="TOP" HEIGHT="1">
+      <p ALIGN="LEFT"><font SIZE="1" face="Arial">Issued to:&nbsp;&nbsp;&nbsp;<b>&nbsp; </b></font><b><font size="1" face="Arial">&nbsp;&nbsp;</font><span style="text-transform: capitalize"><font size="2" face="Arial">el 
+      dEKHELA</font></span></b></td>
+  </tr>
+  <tr>
+    <td WIDTH="164" VALIGN="TOP" HEIGHT="1"><font FACE="Arial" SIZE="1">Status:</font><b><font face="Arial" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    APPROVED</font></b></td>
+  </tr>
+  <tr>
+    <td WIDTH="276" VALIGN="TOP" ROWSPAN="2" HEIGHT="1"><b><span style='font-family: Arial'><font size="1">Procedure:</font></span><span style='font-size:10.0pt;
+  font-family:Arial'><br>
+      Using </span><font size="2">Secondary injection test set</font></b></td>
+    <td width="204" valign="TOP" height="23"><font face="Arial" size="1">
+    Approved Date:&nbsp; <b>&nbsp;&nbsp; 23 Nov 1998</b></font></td>
+  </tr>
+  <tr>
+    <td width="204" valign="TOP" height="23">
+
+<font FACE="Arial" SIZE="5"><b>
+
+<FONT FACE="Arial" SIZE=1>Date to be Reviewed:&nbsp;</FONT></b></font><font face="Arial" size="1">&nbsp;</font><font size="1"><b>Nov </b></font><b><font face="Arial" size="1">
+2003</font></b></td>
+  </tr>
+</table>
+
+<P>Introduction</P><ul>
+
+</FONT>
+
+</B><P ALIGN="JUSTIFY" style="margin-top: 0; margin-bottom: 8">The 7SS10 is a solid state bus bar relay manufactured by Siemens.  This Bus Bar protection has the following features. High degree of stability even under influences owing to CT saturation.
+Short tripping time in the event of an internal fault.  </P>
+<P ALIGN="JUSTIFY" style="margin-top: 0; margin-bottom: 8">Correct behavior and proper response of relocation of faults. The measuring method which 7SS10 Bus Bar protection uses to detect a short circuit within the protection zone is Kirchoff’s law.
+This procedure details the steps required to completely check the proper operation and calibration of the 7SS10 relay. It is recommended this procedure be carried out on an annually bases. This work be carried out section of this document is divided into 3 sections.</P>
+<P ALIGN="JUSTIFY" style="margin-top: 0; margin-bottom: 8">The first preliminary steps to prepare for relay testing describes the activities required prior to testing. Some of these steps could be performed days before the actual test. The second section Preparation for testing describes the steps to set up the equipment for performing the actual tests. The third section is the actual test.&nbsp;The document is formatted the way to minimize the possibility of error causing personal injury or damage to equipment.</P>
+
+<font FACE="Arial" SIZE="5">
+
+  <p ALIGN="left" style="margin-top: 0; margin-bottom: 8">
+  <font face="Traditional Arabic" size="2">
+  <span dir="ltr"><font face="Times New Roman" size="3">The first draft 
+  initialed by eng. Hoda Mohamed Ahmed, tested at </font></span></font>
+  </font>
+  <font face="Times New Roman">&nbsp;</font><font FACE="Arial" SIZE="5"><span dir="ltr"><font face="Times New Roman" size="3">El 
+  Dekhela approved by eng. Afaaf El Badawy General 
+  Protection director. </font></span>
+  </font><font face="Times New Roman">and certified by eng Gomaa El Mahdy 
+  general director of Alx network and MPIS coordinator.</font></p>
+</ul>
+
+<FONT FACE="Arial" SIZE=5>
+
+<B><P align="left" dir="ltr">Safety Precautions</P>
+
+</B></FONT>
+<ul>
+
+
+<font face="Times New Roman" color="#000000" size="3">
+    <li dir="ltr">
+  <p dir="ltr" style="MARGIN-TOP: 0; MARGIN-BOTTOM: 0" align="left">A work 
+  permit must be issued, qualified maintenance staff carry the suitable safety 
+  ID category, </li>
+    <li dir="ltr">
+  <p dir="ltr" style="MARGIN-TOP: 0; MARGIN-BOTTOM: 0" align="left">Safety 
+  fence  with caution marks surrounding the work area is required, </li>
+    <li dir="ltr">
+  <p dir="ltr" style="MARGIN-TOP: 0; MARGIN-BOTTOM: 0" align="left">
+  <xh>
+  <xd>
+  <xh>
+  <xd>
+  <xh>
+  <xd>
+  <xh>
+  <xd>
+  <xh>
+  <xd>Personal protective equipment must be used as safety shoes, and safety 
+  Helmet. </xd>
+  </xh>
+  </xd>
+  </xh>
+  </xd>
+  </xh>
+  </xd>
+  </xh>
+  </xd>
+  </xh>
+    </li>
+    <li dir="ltr">
+  <p dir="ltr" style="MARGIN-TOP: 0; MARGIN-BOTTOM: 0" align="left">
+  <span dir="ltr">Ensure that the Line isolation is done.</span></li>
+    <li dir="ltr">
+  <p dir="ltr" style="MARGIN-TOP: 0; MARGIN-BOTTOM: 0" align="left">Make 
+  sure CT secondary circuits are shorted before isolating the relay's current 
+  circuit&nbsp;and injection the test current.</li></font><font face="Times New Roman">
+  </font>
+  <li dir="ltr">
+    <p style="margin-top: 0; margin-bottom: 0" align="left" dir="ltr">
+    <font face="Times New Roman">Outage arrangement for all the busbar and work permit required or transfer the feeders to another bus.</font></li>
+  <li dir="ltr">
+    <p style="margin-top: 0; margin-bottom: 0" align="left" dir="ltr">
+    <font face="Times New Roman">The Bus Bar protection 
+    type 7SS10 is normally tested with both buses A and B in service, so care must be taken to prevent sending trip signals to the circuit breaker trip coils.</font></li>
+  <li dir="ltr">
+    <p style="margin-top: 0; margin-bottom: 0" align="left" dir="ltr">
+    <font face="Times New Roman">There is a conflict between 1<SUP>st</SUP> safety step, and the fourth step</font></li>
+</ul>
+<p align="left" dir="ltr">
+<B><FONT FACE="Arial" SIZE=5>Tools and Equipment</FONT><font size="5"> </font>
+</B></p>
+<ul>
+  <li dir="ltr">
+    <p style="margin-top: 0; margin-bottom: 0" dir="ltr" align="left">
+    <font color="#000000" size="3"><font face="Times New Roman">Secondary injection test set.</font></font></li>
+  <li dir="ltr">
+    <p style="margin-top: 0; margin-bottom: 0" dir="ltr" align="left">
+    <font color="#000000" size="3"><font face="Times New Roman">Clip-on ammeter.</font></font></li>
+  <li dir="ltr">
+    <p style="margin-top: 0; margin-bottom: 0" dir="ltr" align="left">
+    <font color="#000000" size="3"><font face="Times New Roman">Voltmeter, Multi-meter, Test leads.</font></font></li>
+  <li dir="ltr">
+    <p style="margin-top: 0; margin-bottom: 0" dir="ltr" align="left">
+    <font color="#000000" size="3"><font face="Times New Roman">Screwdriver.</font></font></li>
+</ul>
+
+<B>
+<P align="left" dir="ltr"> <FONT FACE="Arial" SIZE=5>Work to be Carried Out</P>
+</FONT>
+
+</B><FONT FACE="Arial" size="4"><P align="left" dir="ltr">Preliminary Steps to Prepare for Relay Testing </P>
+
+</FONT>
+
+<OL>
+
+<P ALIGN="JUSTIFY"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Review technical reference material: Manufacturer’s manual.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Obtain copy of relay setting from field maintenance file and compare it with the setting on the relay.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Inspect the CT secondary circuits and all cabling supplying the relay.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 0"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 0">Use the 
+station drawing to isolate</p>
+
+</OL>
+<blockquote>
+  <ul>
+    <li dir="ltr">
+<P ALIGN="left" style="margin-top: -11; margin-bottom: 0" dir="ltr">&#9;&nbsp;&nbsp; Breaker failure scheme associated with this relay.</P>
+    </li>
+    <li dir="ltr">
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 0" dir="ltr">   &nbsp;&nbsp;  Disturbance alarms and fault recorder associated with this relay.</P>
+
+    </li>
+  </ul>
+</blockquote>
+<p align="left" dir="ltr">
+<font face="Arial" size="4">Testing the Relay and Protection Outputs </font> </p>
+<OL>
+
+<P ALIGN="JUSTIFY"><LI VALUE=1 dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Carefully follow these test procedure steps
+</p>
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8"> </P>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Verify the test results match the relay setting, if not consult technical services.</LI></p>
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8"></P>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Test trip all breakers associated with the relay one by one.</LI></p>
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8"></P>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Connect one or more circuit breakers to the bus and initiate a trip from the relay</LI></p>
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8"></P>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Repeat to include all breakers.</LI></p>
+</P>
+
+</OL>
+<p align="left" dir="ltr">
+<FONT FACE="Arial" size="4">
+Testing Procedure (s) Preparations </FONT>
+</p>
+<OL>
+
+<P ALIGN="JUSTIFY"><LI VALUE=1 dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Obtain authorization form the control center.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Switch off the D.C</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Withdraw out from the relay Type 7SS10 the fourth output tripping cards 7TJ11.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Isolate the relay 7SS10 from the current circuits by making short circuit between the input current terminals with the output current terminals for the relay on the terminal block for all feeders one by one.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">After making the short circuit in step 4 open the slot between the input and output sides of the current terminal block to isolate the relay. </LI>
+</p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Switch on the DC</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Measure the operating voltage on Bu1, Bu2 and the restraining voltage on Bu3, Bu4 on the fourth cards 7TD10.  The reading must be zero volt.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">After isolating the relay, install a short on the output terminals of the current circuit relay on terminal blocks for all feeders one by one.</LI></p>
+</P>
+
+</OL>
+<p align="left" dir="ltr">
+<FONT FACE="Arial" size="4">
+Checking of the Supervision, Start and Trip Valves, Feeder 1 </FONT>
+</p>
+<OL>
+
+<P dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">
+<span dir="ltr"><u>Note</u>: If the sectionalizing disconnect switch is open, 
+the feeders on Bus Section 1 will bring in the LED’s on the A1 module. However, 
+if the sectionalizing disconnect switch is closed the feeders on both Section 1 
+and Section 2 will bring in the LED’s on the A2 module. Similarly for Bus 2.</span></P>
+<LI VALUE=1 dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Inject current on the input terminal for the relay on phase R and N before the matching CT</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Slowly increase the current until the supervision led (the bottom one from the three light &#9;emitted diodes on 7TS17 card) lights up. </LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Record this value on the test sheet as supervision current value.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Increase the current slowly until the start Led (the middle one) lights up.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Record this value on the test sheet.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Increase the current slowly until the trip led (the top one) lights up.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Record this value on the test sheet as a tripping value.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Repeat the above step from step 1 to 7 but for other phases  (S-N, T-N).</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Repeat the above step from step 1 to 7 but for phase to phase (RS, ST and TR).</LI>
+
+</OL>
+<p align="left" dir="ltr">
+<FONT FACE="Arial" size="4">
+Testing Other Feeders </FONT>
+
+
+</p>
+
+
+<P>&nbsp &nbsp &nbsp For all other feeders repeat the above test from step 1 to 9.</P>
+
+<p align="left" dir="ltr">
+
+<font face="Arial" size="4">Trip Testing </font> </p>
+<OL>
+
+<P ALIGN="JUSTIFY"><LI VALUE=1 dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Obtain permission from the Dispatching Center and perform a trip test on each feeder, one at a time.  </LI>
+</p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Connect this feeder to the bus that you want to trip test.  </LI>
+</p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Connect all other feeders to the other bus.  </LI>
+</p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">The bus coupler should be open to separate the two busses.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Switch off the DC.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Insert the special output tripping card 7TJ11 for this feeder.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Switch on the DC</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Inject current to value equal to the tripping value or more until the circuit breaker trip.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Check that the circuit breaker trip.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI dir="ltr">
+<p style="margin-top: 0; margin-bottom: 8" align="left" dir="ltr">Repeat the above step from step 1 to 9 for all feeders.</LI></p>
+</P>
+
+</OL>
+<p align="left" dir="ltr"><font face="Arial" size="4">Return Relay and Associated Equipment to Service
+</font></p>
+<OL>
+
+<P ALIGN="JUSTIFY"><LI VALUE=1 dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Return relay to service by removing the test leads from the relay. </LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Connect all 
+the current circuit to the relay and remove all the short circuit (step 13)</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Insert all the tripping cards.</LI>
+</p>
+<P ALIGN="left" dir="ltr" style="margin-top: 0; margin-bottom: 8"><LI dir="ltr">
+<p dir="ltr" align="left" style="margin-top: 0; margin-bottom: 8">Use the 
+station drawing to return to service the following equipment</p>
+
+</OL>
+<blockquote>
+  <ul>
+    <li dir="ltr">
+<P ALIGN="left" style="margin-top: -13; margin-bottom: 0" dir="ltr">Breaker trip coils.</P>
+    </li>
+    <li dir="ltr">
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 0" dir="ltr">Breaker failure scheme associated with this relay.</P>
+    </li>
+    <li dir="ltr">
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 0" dir="ltr">Disturbance alarms and fault recorder associated with this relay.</P>
+    </li>
+  </ul>
+</blockquote>
+<p align="left" dir="ltr"><font face="Arial" size="4">Request Power Line be Returned 
+to Service
+</font></p>
+<OL>
+
+<P ALIGN="JUSTIFY"><LI VALUE=1>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Take crossed readings of all AC currents supplied to the relay and compare them to those for normal load conditions.</LI></p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Check that readings agree with station meters: &#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;(MW/MVAR/Power factor/Amperes/voltages). </LI>
+</p>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left"></P>
+<P ALIGN="left" style="margin-top: 0; margin-bottom: 8" dir="ltr"><LI>
+<p style="margin-top: 0; margin-bottom: 8" dir="ltr" align="left">Place a copy of the test result in the field maintenance file.</LI></OL>
+
+<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;<blockquote>
+
+  <blockquote>
+    <blockquote>
+
+<p align="center" style="margin-top: 0; margin-bottom: 0" dir="ltr"><u><b>
+<font face="Arial">Test Sheet</font></b></u></p>
+
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial" size="2">Zone:</font></p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial" size="2">Station:</font></p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial" size="2">Busbar No.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+CT Ratio:</font></p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial" size="2">Relay type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+7SS10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Voltage:</font></p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial" size="2">Operation Current Amp. (state primary or secondary 
+injection)</font></p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<div align="center">
+  <center>
+<table border="1" style="border-collapse: collapse" bordercolor="#111111" width="74%" dir="ltr" height="130">
+  <tr>
+    <td width="14%" rowspan="3" dir="ltr" align="center" height="62" style="border-left-color: #111111; border-left-width: 1; border-top-color: #111111; border-top-width: 1">
+    <p dir="ltr">&nbsp;</p>
+    <p dir="ltr">&nbsp;</td>
+    <td width="43%" colspan="3" dir="ltr" align="center" height="22" style="border-left-style: solid; border-left-width: 1; border-right-style: none; border-right-width: medium; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1">
+    <p align="left" dir="ltr"><font face="Arial" size="2"><span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>BB I <span lang="en-us">&nbsp;</span></font></td>
+    <td width="43%" colspan="3" dir="ltr" align="center" height="22" style="border-left-style: none; border-left-width: medium; border-right-style: solid; border-right-width: 1; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1">
+    <font face="Arial" size="2">Zone (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    )</font></td>
+  </tr>
+  <tr>
+    <td width="42%" dir="ltr" colspan="3" align="center" height="17">
+    <p dir="ltr" align="center"><font face="Arial" size="2">Supervision</font></td>
+    <td width="44%" dir="ltr" colspan="3" align="center" height="17" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr" align="center"><font face="Arial" size="2">Differential</font></td>
+  </tr>
+  <tr>
+    <td width="14%" dir="ltr" align="center" height="17">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L1</font></td>
+    <td width="14%" dir="ltr" align="center" height="17">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L2</font></td>
+    <td width="14%" dir="ltr" align="center" height="17">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L3</font></td>
+    <td width="14%" dir="ltr" align="center" height="17">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L1</font></td>
+    <td width="14%" dir="ltr" align="center" height="17">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L2</font></td>
+    <td width="14%" dir="ltr" align="center" height="17" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L3</font></td>
+  </tr>
+  <tr>
+    <td width="14%" dir="ltr" align="center" height="19" style="border-left-color: #111111; border-left-width: 1">
+    <p dir="ltr"><font face="Arial" size="2">A</font></td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" height="19" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="14%" dir="ltr" align="center" height="19" style="border-left-color: #111111; border-left-width: 1">
+    <p dir="ltr"><font face="Arial" size="2">B</font></td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" height="19" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="14%" dir="ltr" align="center" height="19" style="border-left-color: #111111; border-left-width: 1">
+    <p dir="ltr"><font face="Arial" size="2">C</font></td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" height="19">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" height="19" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr">&nbsp;</td>
+  </tr>
+</table>
+  </center>
+</div>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial" size="2">Busbar No.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+CT Ratio: </font></p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial" size="2">Relay type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+7SS10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Voltage:</font></p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">
+<font face="Arial" size="2">Operation Current Amp. (state primary or secondary 
+injection)</font></p>
+<p align="left" dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<div align="center">
+  <center>
+<table border="1" style="border-collapse: collapse" bordercolor="#111111" width="74%" dir="ltr">
+  <tr>
+    <td width="14%" rowspan="3" dir="ltr" align="center" style="border-left-color: #111111; border-left-width: 1; border-top-color: #111111; border-top-width: 1">
+    <p dir="ltr">&nbsp;</p>
+    <p dir="ltr">&nbsp;</td>
+    <td width="43%" colspan="3" dir="ltr" align="center" style="border-left-style: solid; border-left-width: 1; border-right-style: none; border-right-width: medium; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1">
+    <p dir="ltr">
+<font face="Arial" size="2">BB II</font></td>
+    <td width="43%" colspan="3" dir="ltr" align="center" style="border-left-style: none; border-left-width: medium; border-right-style: solid; border-right-width: 1; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1">
+    <font face="Arial" size="2">Zone (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    )</font></td>
+  </tr>
+  <tr>
+    <td width="42%" dir="ltr" colspan="3" align="center">
+    <p dir="ltr" align="center"><font face="Arial" size="2">Supervision</font></td>
+    <td width="44%" dir="ltr" colspan="3" align="center" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr" align="center"><font face="Arial" size="2">Differential</font></td>
+  </tr>
+  <tr>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L1</font></td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L2</font></td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L3</font></td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L1</font></td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L2</font></td>
+    <td width="14%" dir="ltr" align="center" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr" align="center"><font face="Arial" size="2">L3</font></td>
+  </tr>
+  <tr>
+    <td width="14%" dir="ltr" align="center" style="border-left-color: #111111; border-left-width: 1">
+    <p dir="ltr"><font face="Arial" size="2">A</font></td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="14%" dir="ltr" align="center" style="border-left-color: #111111; border-left-width: 1">
+    <p dir="ltr"><font face="Arial" size="2">B</font></td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="14%" dir="ltr" align="center" style="border-left-color: #111111; border-left-width: 1">
+    <p dir="ltr"><font face="Arial" size="2">C</font></td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="14%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center">
+    <p dir="ltr">&nbsp;</td>
+    <td width="15%" dir="ltr" align="center" style="border-right-color: #111111; border-right-width: 1">
+    <p dir="ltr">&nbsp;</td>
+  </tr>
+</table>
+  </center>
+</div>
+</P>
+
+<p><font face="Arial" size="2"><b>Location:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Equipment&nbsp;code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Checked by:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Signature:&nbsp;&nbsp;&nbsp;</b></font></p>
+</BODY>
+</HTML>

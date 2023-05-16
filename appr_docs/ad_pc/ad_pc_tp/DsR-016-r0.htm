@@ -1,0 +1,624 @@
+<HTML>
+<HEAD>
+<META NAME="Generator" CONTENT="Microsoft FrontPage 5.0">
+<TITLE>DsR-016-r0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+APPROVED</TITLE>
+<META NAME="Template" CONTENT="\\WEB\forms\English MPIS format\TB 2000.dot">
+</HEAD>
+<BODY background="../../../images/approved%20mark.jpg">
+
+<B>
+
+<table BORDER="1" CELLSPACING="1" CELLPADDING="7" WIDTH="573" height="1">
+  <tr>
+    <td WIDTH="52" VALIGN="TOP" ROWSPAN="6" HEIGHT="1">
+    <img border="0" src="../../../images/mpis-1.gif" width="59" height="214"></td>
+    <td WIDTH="481" VALIGN="TOP" COLSPAN="2" HEIGHT="1">
+      <table border="0" width="100%">
+        <tr>
+          <td width="40%"><font face="Arial" size="5"><b>Protection </b></font></td>
+          <td width="100%" align="right"><font FACE="Arial" SIZE="5"><b><x1>
+            Technical Procedure </x1>
+            </b></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td WIDTH="266" VALIGN="TOP" ROWSPAN="3" HEIGHT="1"><b><font face="Arial" size="1">Equipment:</font></b><font FACE="Arial" SIZE="1"><br>
+      </font>
+<b><font face="Arial" size="2">
+Distance
+Relay<br>
+    SEL321<br>
+      MG</font></b></td>
+    <td width="192" valign="TOP" height="28"><font face="Arial" size="1">
+    Document No.:&nbsp; </font><font face="Arial" size="2">&nbsp;&nbsp;<b>DsR-016-r0</b></font></td>
+  </tr>
+  <tr>
+    <td width="192" valign="TOP" height="1">
+      <p align="left"><font face="Arial" size="1">Issued to:</font><b><font face="Arial" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </font><font size="2" face="Arial">&nbsp; Networks
+      &nbsp;</font></b>&nbsp;&nbsp;&nbsp;</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="192" valign="TOP" height="1"><font face="Arial" size="1">Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </font><b><font face="Arial" size="2">APPROVED&nbsp;</font></b></td>
+  </tr>
+  <tr>
+    <td WIDTH="266" VALIGN="TOP" ROWSPAN="2" HEIGHT="1"><b><font face="Arial" size="1">Procedure:<br>
+      </font><font face="Arial" size="2">Using XS92a&nbsp;Test Set</font></b></td>
+<TD WIDTH="194" VALIGN="TOP" HEIGHT=25>
+<FONT FACE="Arial" SIZE=1><P ALIGN="LEFT">Date Approved:&nbsp; </FONT><b><font face="Arial" size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18&nbsp;Aug&nbsp;2001</font></b></TD>
+  </tr>
+  <tr>
+    <TD WIDTH="194" VALIGN="TOP" HEIGHT=1>
+<FONT FACE="Arial" SIZE=1><P ALIGN="LEFT">Date to be Reviewed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Aug&nbsp;2006</b></FONT></TD>
+  </tr>
+</table>
+
+<P ALIGN="LEFT"><font face="Arial" size="5">Introduction</font></P>
+
+</B>
+  <p align="left" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">This document is Test procedure for  Relay SEL 321 by using XS92a set tester.</font>
+  <p align="left" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">The relay SEL 321 continues protection elements, many logic schemes, programmable  I/O and logic ,event recorder fault location, Metering ,and other junctions.</font>
+  <p align="left" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Outputs from all of the protection elements, logic schemes, etc…. Are available programmable logic    ( SEL Logic the control equations
+  ) for tripping, alarming ,keying, communications, and any other
+    deceived functions.</font>
+  <p align="left" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">The relay SEL321 includes three communications ports and or front panel user – interface for entering settings reviewing operations, checking metering, and other
+    functions.</font>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Fig 1, 2 contains SEL- 321
+    front – panel ( one I/O board version)&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    SEL–312 Rear – panel (one I/O board version)&nbsp;</font><p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Fig 3 contains characteristics of distance relay SEL 321</font>
+<p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6">&nbsp;
+<B><P ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font face="Arial" size="5">Safety Precautions</font></P>
+</B>
+<ul>
+<LI>
+  <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Check that the bus and line disconnected switches are opened and Tagged</font></LI><LI>
+  <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Make sure C.T secondary are shorted.</font></LI><LI>
+  <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">V.T miniature circuit breaks ( M.C. B’s) is isolated (
+  opened)</font></LI><LI>
+  <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Isolate D.C supply to
+  relay, when doing any adjustments or maintenance or the relay SEL 321</font></LI><LI>
+  <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Isolate Breaker failure ( B.F) scheme associated with relay,</font></LI><LI>
+  <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Disturbance alarm or fault recorder associated with relay.</font></LI><LI>
+  <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Isolate breaker trip coils and transfer trip scheme.</font></LI><LI>
+  <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Auto –
+  recluse , associated must be isolate with relay
+  SEL 321 ( Test plug isolate the all above points</font></LI>
+</ul>
+<B><P ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font face="Arial" size="5">Tools and Equipment</font></P>
+
+</B>
+<ul>
+  <LI>
+    <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font face="Times New Roman" size="3">Test set type XS92a.</font></LI><LI>
+    <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font face="Times New Roman" size="3">Ammeter.</font></LI><LI>
+    <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font face="Times New Roman" size="3">Test leads</font></LI><LI>
+    <p style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font face="Times New Roman" size="3">Timer</font></LI>
+</ul>
+<B><P ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font face="Arial" size="5">Work to be Carried Out</font> </P>
+<P ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font face="Arial" size="3"><br>
+Steps To Prepare For Relay Testing</font></P>
+</B>
+<ol>
+  <li>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Review technical reference materiel manufacture’s manual</font></li>
+  <li>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Obtain copy of relay
+    SEL 321 setting from field maintenance file</font></li>
+  <li>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Obtain outage for line protected by this relay
+    SEL 321 opened and tagged.</font></li>
+  <li>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Check that the bus and line disconnected switches are opened and tagged.</font></li>
+  <li>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Block protection signaling to : breaker trip coils and transfer trip schemes</font></li>
+  <li>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Go to the switchgear and inspect the C.T ‘S and V.T miniature circuit breakers ( MCB’s) , and all cabling supplying the relay.</font></li>
+  <li>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Check that the cables are in good condition and the all wire connections are tight and clean.</font></li>
+  <li>
+    <p ALIGN="LEFT" style="line-height: 100%; margin-top: 6; margin-bottom: 6"><font size="3" face="Times New Roman">Connect the set test XS92 a to the relay SEL
+    321 according to the figure&nbsp;</font></li>
+</ol>
+
+<B><P ALIGN="LEFT"><font face="Arial" size="5">Testing Procedures&nbsp;</font>   </P>
+<P ALIGN="LEFT"><font face="Arial" size="3">Zone Reaches&nbsp;</font></P>
+<P ALIGN="LEFT"><font face="Arial" size="3">Zone I</font></B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<B><font face="Arial" size="3">Phase To Earth&nbsp;</font>    </P>
+
+</B>
+<ol>
+  <li><font size="3" face="Times New Roman">Restore DC supply to relay SEL 321 scheme.</font></li>
+  <li><font size="3" face="Times New Roman">Prepare the set test xs92 or following:</font></li>
+</ol>
+<CENTER>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+MOD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ZZ  ( distance)</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ZL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UP to setting Z1</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PZL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angle of setting line ( 0-360 &#186; )</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+K0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.7</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+FC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fault code forward 1/ 1  ( phase R to earth)</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+SQ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1F1</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Time fault Zone (250 m sec.)</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+DZL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Step parameters and range limits ( 0.1)</font>
+<P ALIGN="LEFT" style="margin-top: 5"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Start (-)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Injection of testing signals.</font>
+</CENTER>
+<B><P ALIGN="LEFT"><FONT face="Times New Roman" size=3>Notes:</FONT> </P>
+
+</B>
+<ol>
+  <li>
+    <p style="margin-top: 8">We<font size="3" face="Times New Roman"> entered the above parameters according to the Flowchart of set test XS92a&nbsp;</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">When the relay gives tripping signal press
+    &#9689; to stop injection.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Read the values of testing in hand terminals of set test XS92a. And compare this value with the value of setting in test sheet of relay
+    SEL 321.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Press the reset button on the relay front panel and check that the led indicator reset and the alarm contacts open</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Repeat the above test with the phases ( S ) by using FC ( fault code)( 112) &amp; phase (T) by using FC (113) . Make sure relay SEL 321 gives trip signaling with all phases R,S,T in
+    forward direction.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Repeat the above test, but in the reverse direction by using FC fault code (011),( 012) ,(013), make sure that the relay SEL 321 is blocked in the reverse direction .</font></li>
+</ol>
+<FONT FACE="Arial" SIZE=4>
+<B><P ALIGN="LEFT">Phase To Phase</P>
+
+</B></FONT>
+<ol>
+  <li><font face="Times New Roman" size="3">Entered the all above parameters, but in fault code (FC) as following: -</font></li>
+</ol>
+<DIR>
+
+<P ALIGN="LEFT"><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Phase&nbsp;&nbsp;&nbsp; R- S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+121&nbsp;&nbsp;
+Forward direction ( Trip)</font></DIR>
+<DIR>
+
+<P ALIGN="LEFT"><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Phase&nbsp;&nbsp;&nbsp; S – T&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+122&nbsp;&nbsp; Forward direction ( Trip)</font></DIR>
+<DIR>
+
+<P ALIGN="LEFT"><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Phase&nbsp;&nbsp; T – R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; 123&nbsp;&nbsp;
+Forward direction ( Trip)</font></DIR>
+<blockquote>
+  <font face="Times New Roman" size="3">
+  In the reverse direction 021,022,023 (block)</font>
+</blockquote>
+
+<FONT FACE="Arial" SIZE=4>
+
+<B><P ALIGN="LEFT">      Zone II&nbsp; </P>
+
+</B></FONT>
+<ol>
+  <li>
+    <p style="margin-top: 8"><font face="Times New Roman" size="3">Repeat the above test for zone I but the value of Z<SUB>L</SUB> up to Z<SUB>2</SUB>(setting )
+    and time fault ( TF) Up to time of zone (2)</font></li>
+  <li>
+    <p style="margin-top: 8"><font face="Times New Roman" size="3">Make sure that the relay SEL 321 gives trip signaling in the values of setting and in the forward
+    direction and the relay gives block in reverse direction.</font></li>
+</ol>
+<FONT FACE="Arial" SIZE=4>
+<B>
+<P ALIGN="LEFT">   Zone III</P>
+
+</B></FONT>
+<ol>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Repeat the above test for zone II
+    but the value of Z<SUB>L</SUB> up to Z<SUB>3</SUB>(setting) and time fault ( TF)
+    up to time of zone (3).</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Make sure that the relay SEL 321 gives trip signaling  in the values of setting and in the forward
+    direction but in reverse direction the relay blocks.</font></li>
+</ol>
+<FONT FACE="Arial" SIZE=4>
+<B>
+<P ALIGN="LEFT">Zone IV</P>
+
+</B></FONT>
+<ol>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Repeat the above test for zone II
+    but the value of Z<SUB>L</SUB> up to Z<SUB>4</SUB>(setting) and time fault ( TF)
+    up to time of zone (4)</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Make sure that the relay SEL 321 gives trip signaling in the values of setting and in the forward
+    direction but in reverse direction the relay SEL 321 blocked.</font></li>
+</ol>
+<FONT FACE="Arial" SIZE=4>
+<B><P ALIGN="LEFT">Measuring The Operating Times</P>
+
+</B></FONT>
+<ol>
+  <li>
+    <p style="margin-top: 8"><font face="Times New Roman" size="3">The operating time of distance relay
+    SEL 321 should be measured by using tripping contact ( free contact)</font> </li>
+  <li>
+    <p style="margin-top: 8"><font face="Times New Roman" size="3">Connected the free contact to
+    &quot; + &quot;&nbsp; and&nbsp; "__\__                 "  in the front panel of set test XS92 a.</font></li>
+  <li>
+    <p style="margin-top: 8"><font face="Times New Roman" size="3">Enter the all parameter of zone I by Z<SUB>L</SUB> = 0.5 Z<SUB>1</SUB> (setting)</font> </li>
+  <li>
+    <p style="margin-top: 8"><font face="Times New Roman" size="3">When the trip occurs the injection automatically stopped by free contact of relay SEL 321. Then
+    read the value of time zone I in the hand terminal of set test XS92a.</font></li>
+  <li>
+    <p style="margin-top: 8"><font face="Times New Roman" size="3">Repeat the above step to measuring the operating time of zone II ,
+    III, IV</font></li>
+</ol>
+<P ALIGN="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="3" face="Times New Roman">&nbsp;
+Time of Z1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+At    ZL = 0.5  Z<SUB>1</SUB></font>
+<P ALIGN="left"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Time of Z2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+At    ZL = 0.5 (Z<SUB>1</SUB>+Z<SUB>2</SUB>)</font>
+<P ALIGN="left"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Time of Z3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+At    ZL = 0.5 (Z<SUB>2</SUB> + Z<SUB>3</SUB>)</font>
+<P ALIGN="left"><font size="3" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Time of Z4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+At    ZL = 0.5 (Z<SUB>3</SUB> + Z<SUB>4</SUB>)</font><B><P ALIGN="LEFT"><font face="Times New Roman" size="3">Note<br>
+How to find &quot; free contact &quot; for relay SEL 321 ?</font></P>
+
+</B>
+<ol>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Select any contact in the relay SEL
+    321 and measured DC ( Not Found)</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Measured (ohm) buzzer by using
+    avometer for this free contact selected (Not found).</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Make trip by distance relay SEL 321 and measured ohm (buzzer) for this free contact (measured of buzzer) with trip signaling.&nbsp;</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Connect this free contact selected to set test XS92 a  in two point “ + “ &amp;"
+    __\__                 "    in the front panel of set
+    test</font></li>
+</ol>
+<B><P ALIGN="LEFT"><font face="Arial" size="4">End To End Test For Relay SEL 321&nbsp;</font></P>
+
+</B>
+<ol>
+  <li>
+    <p style="margin-top: 8">Repeat the test procedures of zone II and make sure that the trip occur at time of zone II (T2)</li>
+  <li>
+    <p style="margin-top: 8">Make brigade ON receive signal.</li>
+  <li>
+    <p style="margin-top: 8">Make sure that the relay SEL 321 gives trip signaling of zone II at time of zone I
+    (T1)</li>
+</ol>
+<FONT FACE="Arial" SIZE=4>
+<B><P ALIGN="LEFT">Switch Into Fault ( SOIF) Test&nbsp; </P>
+
+</B></FONT>
+<ol>
+  <li>
+    <p style="margin-top: 8">Repeat the test of zone IV (SQ = 1F1) make sure that the relay SEL 321 gives trip signaling in time of zone IV (T4)</li>
+  <li>
+    <p style="margin-top: 8">Repeat the above test of zone IV (SQ = OF1) in set test XS92a make sure that the relay SEL 321 gives trip signaling in time of zone I (
+    T1)</li>
+</ol>
+
+<FONT FACE="Arial" SIZE=4><B><P ALIGN="LEFT">Return Protection Scheme And Associated Equipment To service </P>
+
+</B></FONT>
+<ol>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Return relay SEL 321 to service by withdrawing test plug handle from the relay.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Make sure C.T secondary are opened.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Return relay to service by restoring supply
+    from voltage transformer (V.T miniature circuit breakers (MCB’s ) is closed.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Place the associated barker failure ( B.F) protection scheme back in service.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Restore the previously blocked disturbance alarms and fault recorders associated with this protection.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Return the relay power line carrier  (PLC) links to their normal position.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Turn ON the associated auto –
+    recluse scheme.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Turn ON the power supply DC to relay SEL 321</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Take crossed readings of all AC currents and voltages supplied to the relay SEL 321 and compare them to those for normal load conditions.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Check that these receding agree with station
+    meters MW, MVAR, Power Factor, Amperes, and voltages.</font></li>
+  <li>
+    <p style="margin-top: 8"><font size="3" face="Times New Roman">Place a copy of the test results in the field of maintenance file
+    and test sheet&nbsp;</font></li>
+</ol>
+
+<FONT SIZE=3><P ALIGN="LEFT"></P>
+</FONT><B><FONT FACE="Arial" SIZE=5><P ALIGN="center">                                                  Test Sheet</P>
+
+</FONT>
+
+</B><h3 ALIGN="LEFT"><font face="Arial" size="3">Setting Values</font></h3>
+
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">Date :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; /&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+/</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">Substation :</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">Line:</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">Length:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+km</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">C.T ratio:</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">V.T ratio:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+K<SUB>0</SUB>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+angle =</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">C.T earthling:</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">Z<SUB>1</SUB> =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&#8486;/ph</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">Z<SUB>2 </SUB>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&#8486;/ph</font> </P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">Z<SUB>3</SUB> =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&#8486;/ph</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">Z<SUB>4</SUB> =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&#8486;/ph</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">T<SUB>1</SUB> =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+m sec</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">T<SUB>2</SUB> =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+m sec</font> </P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">T<SUB>3</SUB> =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+m sec</font></P>
+<P style="margin-top: 6; margin-bottom: 0"><font face="Times New Roman" size="3">T<SUB>4  </SUB>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+m sec</font></P>
+
+<B><P ALIGN="LEFT"><font face="Arial" size="3">Testing Results</font> </P>
+<P ALIGN="LEFT">     <font face="Arial" size="3">     Phase /  Earth&nbsp;</font></P></B>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=664>
+<TR><TD WIDTH="11%" VALIGN="MIDDLE" ROWSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Phase</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Zone I</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Zone II</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Zone III</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Zone IV</font></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Testing</font></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">R –E</font></TD>
+<TD WIDTH="11%" VALIGN="TOP"><font size="3" face="Times New Roman">&nbsp;</font></TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">S - E</font></TD>
+<TD WIDTH="11%" VALIGN="TOP"><font size="3" face="Times New Roman">&nbsp;</font></TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">T - E</font></TD>
+<TD WIDTH="11%" VALIGN="TOP"><font size="3" face="Times New Roman">&nbsp;</font></TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+</TABLE>
+<DIR>
+
+<P ALIGN="LEFT"><font face="Times New Roman" size="3">Tested by:</font></P>
+<P ALIGN="LEFT"><font face="Times New Roman" size="3">Date:</font></P></DIR>
+
+<B><P ALIGN="LEFT"><font face="Arial" size="3">Phase to phase</font></P></B>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=664>
+<TR><TD WIDTH="11%" VALIGN="MIDDLE" ROWSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Phase &quot;type of
+fault&quot;</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Zone I</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Zone II</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Zone III</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Zone IV</font></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Testing</font></TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">R – S</font></TD>
+<TD WIDTH="11%" VALIGN="TOP"><font size="3" face="Times New Roman">&nbsp;</font></TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">S - T</font></TD>
+<TD WIDTH="11%" VALIGN="TOP"><font size="3" face="Times New Roman">&nbsp;</font></TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+<TR><TD WIDTH="11%" VALIGN="TOP">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">T - R</font></TD>
+<TD WIDTH="11%" VALIGN="TOP"><font size="3" face="Times New Roman">&nbsp;</font></TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+</TABLE>
+
+<B><P ALIGN="LEFT"><font face="Arial" size="3">Time Reaches</font></P></B>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=664>
+<TR><TD WIDTH="12%" VALIGN="MIDDLE" ROWSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Time of zone</font></TD>
+<TD WIDTH="21%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">T1</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">T2</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">T3</font></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">T4</font></TD>
+</TR>
+<TR><TD WIDTH="10%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="LEFT"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="LEFT"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="LEFT"><font size="3" face="Times New Roman">Testing</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><font size="3" face="Times New Roman">Setting</font></TD>
+<TD WIDTH="11%" VALIGN="MIDDLE">
+<P ALIGN="LEFT"><font size="3" face="Times New Roman">Testing</font></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="MIDDLE">
+<FONT SIZE=3><P ALIGN="LEFT"><font face="Times New Roman">Test value</font></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP"><font size="3" face="Times New Roman">&nbsp;</font></TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+<TD WIDTH="11%" VALIGN="TOP">&nbsp;</TD>
+</TR>
+</TABLE>
+
+<B><P ALIGN="LEFT"><font face="Arial" size="3">Directionality Of Relay SEL
+321</font></P><DIR>
+
+</B><P ALIGN="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Forward&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[&nbsp;&nbsp;&nbsp;&nbsp;
+]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         </P>
+<P ALIGN="LEFT">OR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reverse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[&nbsp;&nbsp;&nbsp;&nbsp; ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </P>
+<B>
+</DIR>
+<P ALIGN="LEFT"><font face="Arial" size="3">End To End Test </font></B><font face="Arial" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+OK</font></P>
+<B><P ALIGN="LEFT"><font face="Arial" size="3">Switch Into Fault ( soif ) test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></B><font face="Arial" size="3">
+OK</font></P>
+<FONT SIZE=3>
+<P ALIGN="LEFT">DATE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /</P>
+<P ALIGN="LEFT">Tested by:</P>
+<DIR>
+
+<P ALIGN="LEFT"><img border="0" src="graphics/dsr-016-3.gif" width="657" height="387"></P>
+<P ALIGN="center"><b><font face="Times New Roman">figure 1 . SEL 321 Front Panel
+(one I\O board version )</font></b></P>
+<P ALIGN="LEFT"><img border="0" src="graphics/dsr-016-2.gif" width="633" height="335"></P>
+<P ALIGN="center"><b><font face="Times New Roman">figure 2 . SEL 321 Rear Panel
+(one I\O board version )</font></b></P>
+<P ALIGN="LEFT"><img border="0" src="graphics/dsr-016.gif" width="543" height="404"></P>
+</DIR>
+</FONT>
+<p align="center"><FONT SIZE=3><b><font face="Times New Roman">figure 3 a . </font></b>
+</FONT><font face="Times New Roman" size="3"><b>Three Phase and Phase -Phase
+distance Characteristics</b></font></p>
+<p align="left"><img border="0" src="graphics/dsr-016-1.gif" width="349" height="248"></p>
+<p align="center"><FONT SIZE=3><b><font face="Times New Roman">figure 3 b . </font></b></FONT><font face="Times New Roman" size="3"><b>Ground
+Distance characteristics</b></font></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font face="Times New Roman" size="3"><b>&nbsp;</b></font></p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<p align="left"><font face="Times New Roman" size="3"><b>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </b></font><img border="0" src="graphics/dsr-013-r0-1.gif" width="721" height="566"></p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<p align="left"><img border="0" src="graphics/dsr-013-r0-2.gif" width="581" height="755"></p>
+</BODY>
+</HTML>

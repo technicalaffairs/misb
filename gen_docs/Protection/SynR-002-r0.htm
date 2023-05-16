@@ -1,0 +1,1599 @@
+<html dir="rtl">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SynR-002-r0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+APPROVED</title>
+</head>
+
+<body text="#000080" bgcolor="#FFFFFF" background="../../images/approved%20mark.jpg">
+
+<table height="56" cellSpacing="1" cellPadding="7" width="602" border="1" dir="ltr" align="left">
+  <tr>
+    <td vAlign="top" width="46" height="38" rowSpan="6" dir="ltr">
+    <p dir="ltr">
+    <font color="#000000">
+    <B>
+    <IMG border=0 
+      src="../../images/mpis-1.gif" width="59" height="214"></B></font></td>
+    <td vAlign="top" width="519" colSpan="2" height="10" dir="ltr">
+      <TABLE width="100%" border=0>
+        <TR>
+          <TD width="36%"><b><font face="Arial" size="5" color="#000000">&nbsp;Protection</font></b></TD>
+          <TD align=right width="104%"><B>
+          <FONT face=Arial 
+            size=5 color="#000000"><X1>Technical Procedure 
+    </X1></FONT></B></TD></TR></TABLE></td>
+  </tr>
+  <tr>
+    <td vAlign="top" width="301" height="108" rowSpan="3" dir="ltr">
+    <p dir="ltr"><font color="#000000"><font face="Arial" size="1"><b>Equipment:</b><br>
+    </font>
+    <b><font face="Arial" size="2">Synchro Check Relay<x2><br>
+    K</x2></font></b><font face="Arial" size="2"><b><x2>AVR130</x2></b></font><x2><b><font face="Arial" size="2"><br>
+    GEC</font></b></x2><x2><b><font face="Arial" size="3"><br>
+&nbsp;</font></b></x2></font></td>
+    <td vAlign="top" width="201" height="24" dir="ltr">
+    <p dir="ltr"><font color="#000000"><font face="Arial" size="1">Document No:</font><font face="Arial"><b> <font size="2"> 
+    &nbsp; 
+    SynR-002-r0</font></b></font></font></td>
+  </tr>
+  <tr>
+    <td vAlign="top" width="201" height="24" dir="ltr">
+    <p dir="ltr"><font color="#000000"><font face="Arial" size="1">Issued To:</font><b><font face="Arial" size="3">
+    <x4>&nbsp;</x4></font><font face="Arial"><font size="2">Ayoun Moussa PS</font>&nbsp;</font></b></font></td>
+  </tr>
+  <tr>
+    <td vAlign="top" width="201" height="24" dir="ltr">
+    <p dir="ltr"><font color="#000000"><font face="Arial" size="1">Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </font>
+    <b><font face="Arial" size="2">APPROVED</font></b></font></td>
+  </tr>
+  <tr>
+    <td vAlign="top" width="301" height="1" rowSpan="2" dir="ltr">
+    <p dir="ltr"><font color="#000000"><font face="Arial" size="1"><b>Procedure:</b></font><br>
+    <b>
+    <x2><font face="Arial" size="2">Using ISA Test Set Type
+    ART/3 or Omicron</font></x2></b></font></td>
+    <td vAlign="top" width="203" height="1" dir="ltr" align="left">
+    <p dir="ltr"><b><font face="Arial" size="1" color="#000000">Approved Date:&nbsp;&nbsp; 
+    18 July 2004</font></b></td>
+  </tr>
+  <tr>
+    <td vAlign="top" width="203" height="11" dir="ltr" align="left">
+    <p dir="ltr"><b><font face="Arial" size="1" color="#000000">Date to be 
+    reviewed:&nbsp;&nbsp;&nbsp; July 2009</font></b></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p dir="ltr">
+  &nbsp;</p>
+<p dir="ltr">
+  &nbsp;</p>
+<p dir="ltr">
+  &nbsp;</p>
+<blockquote>
+<p dir="ltr">
+  &nbsp;</p>
+</blockquote>
+<p dir="ltr">
+  <font color="#000000">
+  <b>
+<font face="Arial" size="5"><br>
+  </font>
+<font face="Arial">
+  <br>
+  </font>
+<font face="Arial" size="5">Introduction</font></b></p>
+<blockquote>
+</font>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="justify">
+<font color="#000000"><font face="Times New Roman">This document outlines the 
+test steps for the Synchrocheck Relay device using secondary injection devices</font><x2><font face="Times New Roman"> 
+ISA Test Set Type ART/3 or Omicron to ensure the correct operation of it.</font></x2></font></p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="justify">
+<font color="#000000" face="Times New Roman">There are eight opto isolated inputs to the relay that can be 
+arranged to operate up to 16 alternative ladder inputs, which perform functions 
+assigned to them in the ladder diagram, as determined by the setting of the 
+INPUT MASKS and so making maximum use of the available control inputs. </font></p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="justify">
+<font color="#000000" face="Times New Roman">Software 
+filtering is applied to eliminate the adverse effects of induced ac signals in 
+the external wiring. Eight programmable output relays are provided on all 
+models. These relays can be arranged to operate in response to any, or all, of 
+up to 16 alternative ladder outputs, whose function is assigned in the ladder 
+diagram, by suitably setting the OUTPUT MASKS.  </font></p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="justify">
+<font color="#000000" face="Times New Roman">In addition there is a wat</font><font color="#000000">chdog 
+relay for external indication of equipment failure/healthy status. Measurements 
+are only available in relays including check synchronism features (KAVS and KAVR). 
+These relays have two voltage transformers for measuring line and bus bar 
+voltages.</font></p>
+  <font color="#000000">
+<p dir="ltr" align="justify" style="margin-top: 0; margin-bottom: 8">
+<span style="font-size: 12.0pt; font-family: Times New Roman; ">The first draft initiated by: eng. Saleh Abdou, tested by eng Mohamed Abaas, 
+  revised by quality control eng. Adel Abdel Qader El Nagar at EDEPCo., accepted 
+  by general manager  </span>
+<span dir="ltr" style="font-size: 12.0pt; font-family: Times New Roman">eng Tarek Yosife Ali, approved by eng Mechaeal Gorge 
+  Habashy head sector of Ayoun Moussa Power Station </span> 
+<SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Times New Roman">and certified by eng. Aly 
+  Mostafa Al Lethy EDEPC inspection &amp; quality control head sector</SPAN></p>
+</font>
+</blockquote>
+<font color="#000000">
+<p dir="LTR"><b><span style="font-size:18.0pt;font-family:Arial">Safety 
+Precautions </span></b></p>
+<ul dir="ltr">
+  <li dir="ltr">
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="left">
+  <xh>
+  <font face="Times New Roman">
+  <XD>
+  A work permit must be issued, maintenance 
+  staff must carry the suitable safety ID category,</XD></font></xh></p>
+  </li>
+  <li dir="ltr">
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="left">
+  <xh>
+  <XD>
+  <FONT 
+  face="Times New Roman">Safety fence (rope) with caution marks surrounding the 
+  work area is required, </FONT>
+    </XD>
+</xh>
+  </p>
+  </li>
+  <li dir="ltr">
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="left">
+  <font face="Times New Roman">Safety and healthy</font><xh><XD><font face="Times New Roman"> equipment must be used as safety shoes, and 
+  safety Helmet .. etc</font></XD></xh></p>
+  </li>
+  <li dir="ltr">
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="left"><span dir="LTR">Line 
+isolation is required</span></p>
+  </li>
+</ul>
+<p dir="LTR"><b><span style="font-size:18.0pt;font-family:Arial">Tools and 
+Equipment </span></b></p>
+<ul dir="ltr">
+  <li dir="ltr">
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8"><span dir="LTR">ISA test set type ART/3 or Omicron</span></p>
+  </li>
+  <li dir="ltr">
+<p dir="ltr" style="margin-top: 0; margin-bottom: 8" align="left"><span dir="LTR">Voltmeter, </span><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span><span dir="LTR">Ammeter, </span>
+<span style="font-style:normal; font-variant:normal; font-weight:normal; font-family:Times New Roman">
+t</span><span dir="LTR">est plug, and test leads.</span></p>
+  </li>
+</ul>
+<p dir="LTR">&nbsp;</p>
+<p dir="LTR">&nbsp;</p>
+<p dir="LTR"><b><span style="font-size:18.0pt;font-family:Arial">
+Work to be carried out </span></b></p>
+<p class="MsoNormal" dir="LTR" style="text-align: left; direction: ltr; unicode-bidi: embed">
+<span style="font-size:
+13.5pt;font-family:Arial">Relays Preparation</span></p>
+<ol dir="ltr">
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span><span dir="LTR">Review the manual and drawings. </span></p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span><span dir="LTR">Prepare the previous or commissioning results of the 
+relay testing. </span></p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span dir="LTR">Check the wires of the relay by hand. </span></p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span dir="LTR">Check the AC&nbsp;source is available to the tester. </span></p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span dir="LTR">Check the existence of the DC sources in panels. </span>
+  </p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span><span dir="LTR">Disconnect the outputs&nbsp;&nbsp; of the relay and 
+connect one of them to the timer of the tester. </span></p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span><span dir="LTR">Check all the leads used in tests. </span></p>
+  </li>
+</ol>
+<p class="MsoNormal" dir="LTR" style="text-align: left; direction: ltr; unicode-bidi: embed">
+<span style="font-size:
+13.5pt;font-family:Arial">Test Steps</span></p>
+<ol dir="ltr">
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span dir="LTR">Connect the voltage&nbsp;leads of a tester unit to the 
+relay points according to the drawings and scheme. </span>
+<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;</span><span style="font-style:normal; font-variant:normal; font-weight:normal" dir="LTR"> </span></p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span dir="LTR">Inject voltage to each couple of points.</span></p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span dir="LTR">Repeat the steps for each pair of points according to the 
+test sheet.</span></p>
+  </li>
+  <li dir="ltr">
+<p class="MsoNormal" dir="ltr" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top:0; margin-bottom:6">
+<span dir="LTR">Record the results.</span></p>
+  </li>
+</ol>
+<p class="MsoNormal" dir="LTR" style="text-align: left; direction: ltr; unicode-bidi: embed">
+<span style="font-size:
+13.5pt;font-family:Arial">Testing the Relay and Protection Outputs</span></p>
+<ol dir="ltr">
+  <li>
+  <p class="MsoNormal" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top: 0; margin-bottom: 6">
+  <xh>
+  Carefully follow these test procedure steps&nbsp;</xh></li>
+  <li>
+  <p class="MsoNormal" style="text-align: left; direction: ltr; unicode-bidi: embed; margin-top: 0; margin-bottom: 6">
+  <xh>
+  Verify the test result match the relay setting. If not consult 
+  technical services.
+</xh>
+  </li>
+</ol>
+</font>
+  <xh>
+<font color="#000000">
+  <p dir="ltr" style="margin-top: 0; margin-bottom: 6"> <br>
+  &nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">&nbsp;<p dir="ltr" style="margin-top: 0; margin-bottom: 6">
+  <xh>
+        <img border="0" src="graphics/SCR-002-01.gif" width="144" height="167"></xh></font></xh><p dir="ltr"><font color="#000000">Standard connection table</font></p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="87%" id="AutoNumber1" dir="ltr" align="left">
+  <tr>
+    <td width="27%" dir="ltr" align="center"><font color="#000000">Function</font></td>
+    <td width="27%" dir="ltr" colspan="4" align="center"><font color="#000000">Terminal</font></td>
+    <td width="46%" dir="ltr" align="center"><font color="#000000">Function</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Not Used</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">2</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">1</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Earth Terminal </font> </td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr" valign="top"><font color="#000000">Watchdog Relay (Break contact)</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">m</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">4<br>
+    6</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">3<br>
+    5</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">b<br>
+    --</font></td>
+    <td width="46%" dir="ltr" valign="top"><font color="#000000">Watchdog Relay (Break contact)</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">48V Field Voltage</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">(-)</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">8</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">7</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">48V Field Voltage</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Not Used</font></td>
+    <td width="6%" dir="ltr" align="center">&nbsp;</td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">10</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">9</font></td>
+    <td width="7%" dir="ltr" align="center">&nbsp;</td>
+    <td width="46%" dir="ltr"><font color="#000000">Not Used</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Not Used</font></td>
+    <td width="6%" dir="ltr" align="center">&nbsp;</td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">12</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">11</font></td>
+    <td width="7%" dir="ltr" align="center">&nbsp;</td>
+    <td width="46%" dir="ltr"><font color="#000000">Not Used</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Auxiliary Voltage Input
+    </font> </td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">(-)</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">14</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">13</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Auxiliary Voltage Input
+    </font> </td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Not Used</font></td>
+    <td width="6%" dir="ltr" align="center">&nbsp;</td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">16</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">15</font></td>
+    <td width="7%" dir="ltr" align="center">&nbsp;</td>
+    <td width="46%" dir="ltr"><font color="#000000">Not Used</font></td>
+  </tr>
+  <tr>
+    <td width="39%" dir="ltr"><font color="#000000">Line Voltage</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">In</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">18</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">17</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">In</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Line Voltage</font></td>
+  </tr>
+  <tr>
+    <td width="39%" dir="ltr"><font color="#000000">Busbar Voltage</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">Out</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">20</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">19</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">In</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Busbar Voltage</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Not Used</font></td>
+    <td width="6%" dir="ltr" align="center">&nbsp;</td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">22</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">21</font></td>
+    <td width="7%" dir="ltr" align="center">&nbsp;</td>
+    <td width="46%" dir="ltr"><font color="#000000">Not Used</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Not Used</font></td>
+    <td width="6%" dir="ltr" align="center">&nbsp;</td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">24</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">23</font></td>
+    <td width="7%" dir="ltr" align="center">&nbsp;</td>
+    <td width="46%" dir="ltr"><font color="#000000">Not Used</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Not Used</font></td>
+    <td width="6%" dir="ltr" align="center">&nbsp;</td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">26</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">25</font></td>
+    <td width="7%" dir="ltr" align="center">&nbsp;</td>
+    <td width="46%" dir="ltr"><font color="#000000">Not Used</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Not Used</font></td>
+    <td width="6%" dir="ltr" align="center">&nbsp;</td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">28</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">27</font></td>
+    <td width="7%" dir="ltr" align="center">&nbsp;</td>
+    <td width="46%" dir="ltr"><font color="#000000">Not Used</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr" valign="middle"><font color="#000000">Output Relay 0</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">30<br>
+    32</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">29<br>
+    31</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="46%" dir="ltr" valign="middle"><font color="#000000">Output Relay 4</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr" valign="middle"><font color="#000000">Output Relay 1</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">34<br>
+    36</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">33<br>
+    35</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="46%" dir="ltr" valign="middle"><font color="#000000">Output Relay 5</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr" valign="middle"><font color="#000000">Output Relay 2</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">38<br>
+    40</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">37<br>
+    39</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="46%" dir="ltr" valign="middle"><font color="#000000">Output Relay 6</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr" valign="middle"><font color="#000000">Output Relay 3</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">42<br>
+    44</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">41<br>
+    43</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="46%" dir="ltr" valign="middle"><font color="#000000">Output Relay 7</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Opto Control Input L0</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">46</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">45</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Opto Control Input L3</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Opto Control Input L1</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">48</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">47</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Opto Control Input L4</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Opto Control Input L2</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">50</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">49</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Opto Control Input L5</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">Common L0/L1/L2</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">(-)</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">52</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">51</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Opto Control Input L6</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">K-Bus Serial Port</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">54</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">53</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">(+)</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Opto Control Input L7</font></td>
+  </tr>
+  <tr>
+    <td width="27%" dir="ltr"><font color="#000000">K-Bus Serial Port</font></td>
+    <td width="6%" dir="ltr" align="center"><font color="#000000">--</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">56</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">55</font></td>
+    <td width="7%" dir="ltr" align="center"><font color="#000000">(-)</font></td>
+    <td width="46%" dir="ltr"><font color="#000000">Common L3/L4/L5/L6/L7</font></td>
+  </tr>
+</table>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr"><font color="#000000"><u>Key to connection tables</u><br>
+(+) and (-)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indicate the polarity of 
+the dc output from these terminals<br>
+(+) and (-)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indicate the polarity of 
+the applied dc supply<br>
+In / Out&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the signal direction for the in phase condition <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Shaded is not available on KVTR relays </p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">Note : All relays have standard Midos terminal blocks to which 
+connection can be made with either <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4mm screws or 4.8 mm 
+pre-insulated snap-on connectors.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Two connections can be 
+made to each terminal.</font></p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">
+  <xh>
+<font color="#000000">
+        <img border="0" src="graphics/SynR-002-02.gif" width="527" height="333"></font></xh></p>
+<p dir="ltr" align="left"><font color="#000000" face="Arial" size="2"><b><u>TECHNICAL DATA</u><br>
+Ratings<br>
+Inputs</b></font></p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="86%" id="AutoNumber2" align="left" height="61">
+  <tr>
+    <td width="40%" dir="ltr" align="center" height="30">
+    <font color="#000000" face="Arial" size="2">Operative range</font></td>
+    <td width="31%" dir="ltr" align="center" height="30">
+    <font color="#000000" face="Arial" size="2">Nominal rating</font></td>
+    <td width="29%" dir="ltr" align="center" height="30">
+    <font color="#000000" face="Arial" size="2">Input voltage (Vn)</font></td>
+  </tr>
+  <tr>
+    <td width="40%" dir="ltr" align="center" height="30">
+    <font color="#000000" face="Arial" size="2">0-440V</font></td>
+    <td width="31%" dir="ltr" align="center" height="30">
+    <font color="#000000" face="Arial" size="2">63.5/110V</font></td>
+    <td width="29%" dir="ltr" align="center" height="30">
+    <font color="#000000" face="Arial" size="2">(KAVR and KAVS only)</font></td>
+  </tr>
+</table>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="93%" id="AutoNumber3" height="42" align="left">
+  <tr>
+    <td width="20%" height="41" dir="ltr" align="center" rowspan="2">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Absolute 
+    maximum</font></td>
+    <td width="35%" height="22" dir="ltr" align="center" colspan="2">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Operative 
+    range</font></td>
+    <td width="21%" height="41" dir="ltr" align="center" rowspan="2">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Nominal 
+    rating</font></td>
+    <td width="24%" height="41" dir="ltr" align="center" rowspan="2">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Auxiliary 
+    voltage (Vx)</font></td>
+  </tr>
+  <tr>
+    <td width="20%" height="19" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">ac 50/60 Hz</font></td>
+    <td width="15%" height="19" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">dc supply</font></td>
+  </tr>
+  <tr>
+    <td width="20%" height="19" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">190V crest<br>
+    380V crest</font></td>
+    <td width="20%" height="19" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">50-133V<br>
+    87-265V</font></td>
+    <td width="15%" height="19" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">19-150V<br>
+    33-300V</font></td>
+    <td width="21%" height="19" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">24-125V ac/dc<br>
+    48-250V ac/dc</font></td>
+    <td width="24%" height="19" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Auxiliary powered
+    </font> </td>
+  </tr>
+</table>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="77%" id="AutoNumber2" align="left">
+  <tr>
+    <td width="33%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Reference range</font></td>
+    <td width="33%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Nominal rating</font></td>
+    <td width="34%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Frequency (Fn)</font></td>
+  </tr>
+  <tr>
+    <td width="33%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">45-65 Hz</font></td>
+    <td width="33%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">50Hz or 60Hz</font></td>
+    <td width="34%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Frequency tracking</font></td>
+  </tr>
+  <tr>
+    <td width="33%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">47-51 Hz or 57-61 Hz</font></td>
+    <td width="33%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Non tracking</font></td>
+    <td width="34%" dir="ltr" align="center">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Non tracking</font></td>
+  </tr>
+</table>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="78%" id="AutoNumber2" height="61" align="left">
+  <tr>
+    <td width="33%" dir="ltr" align="center" height="41">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Reference range</font></td>
+    <td width="33%" dir="ltr" align="center" height="41">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Nominal rating</font></td>
+    <td width="34%" dir="ltr" align="center" height="41">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Opto-Isolated Inputs
+    </font> </td>
+  </tr>
+  <tr>
+    <td width="33%" dir="ltr" align="center" height="19">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">25-60V dc only</font></td>
+    <td width="33%" dir="ltr" align="center" height="19">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">50V dc only</font></td>
+    <td width="34%" dir="ltr" align="center" height="19">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Supply</font></td>
+  </tr>
+</table>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr"><font color="#000000">Outputs <br>
+Field voltage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+48V dc (current limited to 60mA)<br>
+<b>Burdens<br>
+</b>Voltage circuits<br>
+0.012VA at 100V<br>
+0.15VA at 327V<br>
+0.87VA at 440V</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">Auxiliary voltage</font></p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: 0" bordercolor="#111111" width="78%" id="AutoNumber4" height="113" align="left">
+  <tr>
+    <td width="67%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000">at Vx max. with no output relays or logic inputs 
+    energized</font></td>
+    <td width="33%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000">DC supply 2.75-3.0 W</font></td>
+  </tr>
+  <tr>
+    <td width="67%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000">at Vx max. with 2 output relays and 2 logic inputs 
+    energized</font></td>
+    <td width="33%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    4.0-45 W</font></td>
+  </tr>
+  <tr>
+    <td width="67%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000">at Vx max. with all output relays and logic inputs 
+    energized</font></td>
+    <td width="33%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    7.6-8.6 W</font></td>
+  </tr>
+  <tr>
+    <td width="67%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <font color="#000000">at Vx max. with no output relays or logic inputs 
+    energized</font></td>
+    <td width="33%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <font color="#000000">AC supply 4.5-9.0 VA</font></td>
+  </tr>
+  <tr>
+    <td width="67%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <font color="#000000">at Vx max. with 2 output relays and 2 logic inputs 
+    energized</font></td>
+    <td width="33%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    6.0 - 12.0 VA</font></td>
+  </tr>
+  <tr>
+    <td width="67%" dir="ltr" style="border-style: none; border-width: medium" height="16">
+    <font color="#000000">at Vx max. with all output relays and logic inputs 
+    energized</font></td>
+    <td width="33%" dir="ltr" style="border-style: none; border-width: medium" height="16">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    7.5 - 20.0 VA</font></td>
+  </tr>
+</table>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="left">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="left">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="left">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="left">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="left">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="left">&nbsp;</p>
+<p dir="ltr" style="margin-top: 4; margin-bottom: 4" align="left"><font color="#000000">Opto-isolated inputs <br>
+DC supply&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0.25W per input (50V 10K<font face="Times New Roman">&#937;)<br>
+&nbsp;</font></font></p>
+<p dir="ltr" style="margin-top: 4; margin-bottom: 4" align="left"><font color="#000000">
+<font face="Arial">
+<b>Setting Ranges<br>
+</b>
+</font><font face="Times New Roman">Auto-reclose setting<br>
+Timer setting range<br>
+&nbsp;</font></font></p>
+<p dir="ltr" style="margin-top: 4; margin-bottom: 4" align="left">
+<font face="Times New Roman" color="#000000">The default setting range for all timers is 0.01 to 999 seconds <br>
+More restrictive limits may be applied to each timer. See the scheme 
+documentation for details<br>
+&nbsp;</font></p>
+<p dir="ltr" style="margin-top: 4; margin-bottom: 4" align="left"><font color="#000000">
+<b><font face="Arial">Counter setting range</font></b><font face="Times New Roman"><br>
+The default setting range for all counter setting is 1 to 9999<br>
+More restrictive limits may be applied to each counter. See the scheme 
+documentation for details<br>
+Check synchronism setting<br>
+&nbsp;</font></font></p>
+<p dir="ltr" style="margin-top: 4; margin-bottom: 4" align="left"><font color="#000000">
+<b><font face="Arial">Under voltage detector<br>
+</font></b><font face="Times New Roman">Voltage setting range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22 to 132V ms<br>
+Voltage setting step&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.5V<br>
+Operate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font>± 5% of the set value<font face="Times New Roman"><br>
+</font>Reset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Times New Roman">&lt; 105% of operation <br>
+&nbsp;</font></font></p>
+<p dir="ltr" style="margin-top: 4; margin-bottom: 4" align="left"><font color="#000000">
+<b>
+<font face="Arial">Differential voltage detector</font></b><font face="Times New Roman"><br>
+Voltage setting range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.5 to 22V 
+rms<br>
+Voltage setting step&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+0.5V<br>
+Operate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font>± 5% of the set value<br>
+Reset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font face="Times New Roman">&gt;97% of setting<br>
+&nbsp;</font></font></p>
+<p dir="ltr" style="margin-top: 4; margin-bottom: 4" align="left"><font color="#000000">
+<b>
+<font face="Arial">Phase angle measurement <br>
+</font></b>
+<font face="Times New Roman">Setting range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+5º to 90º</font><br>
+Setting step&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+1<font face="Times New Roman">º<br>
+Operates at&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Setting +0-3º<br>
+Resets at&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Operate value -0+3º</font></font></p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: 0" bordercolor="#111111" width="53%" id="AutoNumber5" height="126" align="left">
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="13">
+    <p style="margin-top: 2; margin-bottom: 2" dir="ltr">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="13">
+    <p style="margin-top: 2; margin-bottom: 2" dir="ltr">
+    <font color="#000000">Slip frequency </font> </td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2" dir="ltr">
+    <font color="#000000">0.001 to 2.000 Hz</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2" dir="ltr">
+    <font color="#000000">Setting range </font> </td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2" dir="ltr">
+    <font color="#000000">0.001 Hz</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2" dir="ltr">
+    <font color="#000000">Setting step</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting ± 10mHz</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Blocks at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Slip timer</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">0.1 to 99 seconds</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting range</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">0.1 seconds</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting step</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">System split</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">90<font face="Times New Roman">º to 175º</font></font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting range</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">1<font face="Times New Roman">º </font></font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting step</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">setting +0-3º </font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Operates at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="32">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">operate value -0+3º</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="32" valign="top">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Resets at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Split timer</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">0.1 to 99 seconds</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting range</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="35" valign="top">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">0.1 seconds</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="35" valign="top">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting step</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">System angle measurement</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">5º to 90º</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting range</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">1º</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting step</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">setting +0-3º </font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Operates at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">operat value -0+3º</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Resets at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="37">
+    <p style="margin-top: 2; margin-bottom: 2">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="37" valign="bottom">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">System slip frequency </font> </td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">0.001 to 2.000Hz</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting range</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">0.001Hz</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting step</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">
+    <font face="Times New Roman">Setting </font>± 10mHz</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Blocks at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">System timer</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">0.1 to 99 seconds</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting range</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">0.1 seconds</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting step</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="37">
+    <p style="margin-top: 2; margin-bottom: 2">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="37" valign="bottom">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Live voltage</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">Dead voltage setting to 132V</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting range</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">0.5V</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting step</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">± 5% of setting</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Operates at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">&gt; 98% of operate value </font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Resets at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="36">
+    <p style="margin-top: 2; margin-bottom: 2">
+    </td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="36" valign="bottom">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Dead voltage </font> </td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">5V to live voltage setting</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting range</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">0.5V</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Setting step </font> </td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">± 5% of setting</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Operates at</font></td>
+  </tr>
+  <tr>
+    <td width="52%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font face="Times New Roman" color="#000000">&lt; 104% of operate value</font></td>
+    <td width="48%" dir="ltr" style="border-style: none; border-width: medium" height="17">
+    <p style="margin-top: 2; margin-bottom: 2">
+    <font color="#000000">Resets at</font></td>
+  </tr>
+</table>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0"><font color="#000000">Note : The live voltage setting cannot be set to less than the dead 
+voltage setting and the dead voltage setting 
+cannot be set to greater than the live voltage setting&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center"><u><b>
+<font color="#000000" face="Arial">TEST SHEET</font></b></u></p>
+
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0" align="center">&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: 0" bordercolor="#111111" width="80%" id="AutoNumber10" align="left">
+  <tr>
+    <td width="25%" dir="ltr" align="center" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">--------------------</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p align="center" style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">K</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p align="center" style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">---------------------</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Relay type</font></td>
+  </tr>
+  <tr>
+    <td width="25%" dir="ltr" align="center" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">---------------------</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p align="center" style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Date</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p align="center" style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">---------------------</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Relay model number </font> </td>
+  </tr>
+  <tr>
+    <td width="25%" dir="ltr" align="center" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">---------------------</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p align="center" style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Serial number</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p align="center" style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">----------------------</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Relay firm ware number</font></td>
+  </tr>
+  <tr>
+    <td width="25%" dir="ltr" align="center" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">---------------------</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p align="center" style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Circuit </font> </td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p align="center" style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">----------------------</font></td>
+    <td width="25%" dir="ltr" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Station</font></td>
+  </tr>
+</table>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: 0" bordercolor="#111111" width="59%" id="AutoNumber9" align="left" height="1">
+  <tr>
+    <td width="9%" dir="ltr" height="19" style="border-right-style: solid; border-right-width: 1">&nbsp;</td>
+    <td width="53%" dir="ltr" height="19" style="border-right-style: none; border-right-width: medium; border-top-style: none; border-top-width: medium; border-bottom-style: none; border-bottom-width: medium">
+    &nbsp;</td>
+    <td width="38%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Rated voltage Vn</font></td>
+  </tr>
+  <tr>
+    <td width="9%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1">
+    <p style="margin-top: -8; margin-bottom: -8"></td>
+    <td width="53%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8">
+    <font face="Arial" size="2" color="#000000">&nbsp;</font></td>
+    <td width="38%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+  </tr>
+  <tr>
+    <td width="9%" dir="ltr" height="20" style="border-right-style: solid; border-right-width: 1">&nbsp;</td>
+    <td width="53%" dir="ltr" height="20" style="border-right-style: none; border-right-width: medium; border-top-style: none; border-top-width: medium; border-bottom-style: none; border-bottom-width: medium">
+    <font color="#000000" face="Arial" size="2">57/120v</font></td>
+    <td width="38%" dir="ltr" height="20" style="border-style: none; border-width: medium">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="9%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium; border-top-style: solid; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="53%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="38%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+  </tr>
+  <tr>
+    <td width="9%" dir="ltr" height="19" style="border-right-style: solid; border-right-width: 1">&nbsp;</td>
+    <td width="53%" dir="ltr" height="19" style="border-right-style: none; border-right-width: medium; border-top-style: none; border-top-width: medium; border-bottom-style: none; border-bottom-width: medium">
+    <font color="#000000" face="Arial" size="2">24/125v</font></td>
+    <td width="38%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Auxiliary voltage</font></td>
+  </tr>
+  <tr>
+    <td width="9%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="53%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="38%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+  </tr>
+  <tr>
+    <td width="9%" dir="ltr" height="19" style="border-right-style: solid; border-right-width: 1">&nbsp;</td>
+    <td width="53%" dir="ltr" height="19" style="border-right-style: none; border-right-width: medium; border-top-style: none; border-top-width: medium; border-bottom-style: none; border-bottom-width: medium">
+    <font color="#000000" face="Arial" size="2">48/250v</font></td>
+    <td width="38%" dir="ltr" height="19" style="border-style: none; border-width: medium">&nbsp;</td>
+  </tr>
+</table>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: 0" bordercolor="#111111" width="59%" id="AutoNumber9" align="left" height="1">
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: solid; border-width: 1">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font>
+    </td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Commissioning preliminaries
+    </font> </td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="20" style="border-style: solid; border-width: 1">&nbsp;</td>
+    <td width="44%" dir="ltr" height="20" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Serial number on case, module and cover chocked</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: solid; border-width: 1">&nbsp;</td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">CT shorting switches in case checked</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: solid; border-width: 1">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font>
+    </td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">Terminal x 21 and 22,23and 24,25 and 26,27 and 28 checked </font> 
+    <p style="margin-top: 0; margin-bottom: 0">
+    <font color="#000000" face="Arial" size="2">for continuity with 
+    module removed from case </font> </td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: solid; border-width: 1">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font>
+    </td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">External wining checked to diagrarn (if available)</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -5; margin-bottom: -5"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="20" style="border-style: solid; border-width: 1">&nbsp;</td>
+    <td width="44%" dir="ltr" height="20" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Earth connection to case checked</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="18" style="border-style: solid; border-width: 1">
+    </td>
+    <td width="44%" dir="ltr" height="18" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Test block connections checked</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: solid; border-width: 1">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font>
+    </td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Insulation checked</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="20" style="border-style: solid; border-width: 1">&nbsp;</td>
+    <td width="44%" dir="ltr" height="20" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Auxiliary supply checked</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium; border-bottom-style:none; border-bottom-width:medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: none; border-width: medium; ">&nbsp;</td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Auxiliary voltage at relay 
+    terminals&nbsp;&nbsp; ---------------------------- V ac/dc</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-style:none; border-width:medium; ">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: none; border-width: medium; ">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font>
+    </td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium">
+    <font color="#000000" face="Arial" size="2">Watching contacts checked </font> </td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-style:none; border-width:medium; ">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="20" style="border-style: none; border-width: medium; ">&nbsp;</td>
+    <td width="44%" dir="ltr" height="20" style="border-style: none; border-width: medium">&nbsp;</td>
+  </tr>
+</table>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p dir="ltr" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-width: 0" bordercolor="#111111" width="59%" id="AutoNumber9" align="left" height="1">
+  <tr>
+    <td width="4%" dir="ltr" height="20" style="border-style: solid; border-width: 1">&nbsp;</td>
+    <td width="44%" dir="ltr" height="20" style="border-style: none; border-width: medium" align="left">
+    <font face="Arial" size="2" color="#000000">Supply off&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Terminals 3 and 5</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium" align="left">
+    </td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="18" style="border-style: solid; border-width: 1">
+    </td>
+    <td width="44%" dir="ltr" height="18" style="border-style: none; border-width: medium" align="left">
+    <font color="#000000" face="Arial" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Terminals 4 and 6</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium" align="left">
+    </td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: solid; border-width: 1">
+    <font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font>
+    </td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium" align="left">
+    <font color="#000000" face="Arial" size="2">&nbsp;Supply on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Terminals 3 and 5</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium" align="left">
+    </td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="20" style="border-style: solid; border-width: 1">&nbsp;</td>
+    <td width="44%" dir="ltr" height="20" style="border-style: none; border-width: medium" align="left">
+    <font color="#000000" face="Arial" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Terminals 4 and 6</font></td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="1" style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium; border-bottom-style:none; border-bottom-width:medium">
+    <p style="margin-top: -8; margin-bottom: -8"><font color="#000000">&nbsp;
+    </font> </td>
+    <td width="44%" dir="ltr" height="1" style="border-style: none; border-width: medium" align="left">
+    </td>
+  </tr>
+  <tr>
+    <td width="4%" dir="ltr" height="19" style="border-style: none; border-width: medium; ">&nbsp;</td>
+    <td width="44%" dir="ltr" height="19" style="border-style: none; border-width: medium" align="left">
+    <font color="#000000" face="Arial" size="2">&nbsp;Field 
+    voltage&nbsp; ---------------------------- V d</font></td>
+  </tr>
+</table>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p dir="ltr" align="left">&nbsp;</p>
+<p class="MsoNormal" dir="ltr" style="text-align:left;direction:ltr;unicode-bidi:
+embed; margin-top:0; margin-bottom:0"><b>
+<font color="#000000" size="2" face="Arial">Location: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ 
+Relay Designation:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Test date:</font></b></p>
+<p class="MsoNormal" dir="ltr" style="text-align:left;direction:ltr;unicode-bidi:
+embed; margin-top:0; margin-bottom:0"><b>
+<font color="#000000" size="2" face="Arial">Tested by:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signature:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;Last test date:&nbsp;&nbsp; </font></b></p>
+<p class="MsoNormal" dir="ltr" style="text-align:left;direction:ltr;unicode-bidi:
+embed; margin-top:0; margin-bottom:0"><b>
+<font color="#000000" size="2" face="Arial">Approved by:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signature:</font></b></p>
+
+</body>
+
+</html>
