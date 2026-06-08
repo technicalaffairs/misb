@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
 
 :root {
   --bg-dark: #060913;
@@ -583,4 +584,104 @@ body {
   .contacts-info {
     justify-content: center;
   }
+}
+
+/* Global Overrides for Legacy Sub-Pages */
+body:not(.homepage-body) {
+  background-color: var(--bg-dark) !important;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%) !important;
+  background-attachment: fixed !important;
+  color: var(--text-main) !important;
+  padding: 40px 20px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+/* RTL / Arabic Font Support */
+html[lang="ar"] body:not(.homepage-body),
+body[dir="rtl"]:not(.homepage-body),
+[dir="rtl"] body:not(.homepage-body) {
+  font-family: 'Cairo', 'Outfit', sans-serif !important;
+}
+
+/* Table styling for legacy pages */
+body:not(.homepage-body) table {
+  background: var(--bg-card) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 16px !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin: 30px auto !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-glow) !important;
+}
+
+body:not(.homepage-body) tr {
+  background: transparent !important;
+}
+
+body:not(.homepage-body) td, 
+body:not(.homepage-body) th {
+  padding: 14px 18px !important;
+  border: none !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  font-family: inherit !important;
+  background: transparent !important;
+}
+
+body:not(.homepage-body) tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* Override legacy text elements & font tags */
+body:not(.homepage-body) font {
+  font-family: inherit !important;
+}
+
+body:not(.homepage-body) font[color="#0000ff"],
+body:not(.homepage-body) font[color="blue"],
+body:not(.homepage-body) font[color="#0000FF"] {
+  color: var(--accent-blue) !important;
+}
+
+body:not(.homepage-body) font[color="#ff0000"],
+body:not(.homepage-body) font[color="red"],
+body:not(.homepage-body) font[color="#FF0000"] {
+  color: var(--accent-red) !important;
+}
+
+body:not(.homepage-body) font[color="#008000"],
+body:not(.homepage-body) font[color="green"] {
+  color: var(--accent-teal) !important;
+}
+
+/* Legacy link styling */
+body:not(.homepage-body) a {
+  color: var(--accent-blue) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+body:not(.homepage-body) a:hover {
+  color: var(--accent-teal) !important;
+  text-decoration: underline !important;
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Navigation table formatting */
+body:not(.homepage-body) table[id="AutoNumber1"] {
+  border-radius: 12px !important;
+  margin-top: 10px !important;
+  background: rgba(13, 20, 38, 0.7) !important;
+}
+
+body:not(.homepage-body) table[id="AutoNumber1"] td {
+  padding: 10px !important;
 }
