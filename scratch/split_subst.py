@@ -299,86 +299,198 @@ def make_empty_row():
   </tr>"""
     return BeautifulSoup(row_html, "html.parser").tr
 
+# Modern sub-page HTML template
+modern_page_template = """<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPIS - {title}</title>
+  <link rel="stylesheet" href="{root_prefix}style.css?v=2">
+  <!-- FontAwesome for modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+    body {{
+      font-family: 'Cairo', 'Outfit', sans-serif;
+      direction: rtl;
+    }}
+    .header-text-left {{
+      text-align: right;
+    }}
+    .header-text-right {{
+      text-align: left;
+    }}
+    .page-title-banner {{
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-teal);
+      margin-top: 10px;
+      box-shadow: var(--shadow-glow);
+    }}
+    /* Hide header when printing */
+    @media print {{
+      .top-bar, .header-section, .main-nav, .page-title-banner {{
+        display: none !important;
+      }}
+      body {{
+        background: white !important;
+        color: black !important;
+        padding: 0 !important;
+      }}
+    }}
+  </style>
+</head>
+<body class="subpage-body">
+  <div class="app-container">
+    <!-- Top Bar with Contact Info and Language Toggle -->
+    <div class="top-bar">
+      <div class="contacts-info">
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>الهاتف/الفاكس: 02 22601911</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:mpisgd@hotmail.com">mpisgd@hotmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-server"></i>
+          <span>رقم الخادم: 02 24010301</span>
+        </div>
+      </div>
+      <a href="{root_prefix}index.htm" class="lang-switch">
+        <i class="fa-solid fa-globe"></i>
+        <span>English Version</span>
+      </a>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header-section">
+      <div class="header-text-left">
+        <span class="org-hierarchy">وزارة الكهرباء والطاقة المتجددة</span>
+        <h1 class="org-name">الشركة القابضة لكهرباء مصر</h1>
+        <span class="org-subname">منطقة كهرباء مصر الوسطى - إدارة الشئون الفنية</span>
+      </div>
+
+      <div class="logo-container">
+        <div class="logo-glow-wrapper">
+          <img src="{root_prefix}images/eetc_logo.jpg" alt="EETC Logo" class="main-logo">
+        </div>
+        <div class="secondary-logos">
+          <img src="{root_prefix}images/eehc_logo.gif" alt="EEHC Logo" class="sec-logo">
+          <img src="{root_prefix}images/Flag5555.gif" alt="Egyptian Flag" class="sec-logo flag">
+        </div>
+      </div>
+
+      <div class="header-text-right">
+        <span class="org-hierarchy">قطاع تطوير نظم إجراءات الصيانة ومراقبة الجودة</span>
+        <h2 class="org-name">نظام معلومات إجراءات الصيانة (MPIS)</h2>
+        <span class="org-subname">الإدارة العامة لتطوير نظم إجراءات الصيانة</span>
+      </div>
+    </header>
+
+    <!-- Navigation Menu Buttons -->
+    <nav class="main-nav">
+      <a href="{root_prefix}arabic_web/Ar_whatsnew/Ar_whatsnew.htm" class="nav-btn">
+        <i class="fa-solid fa-bullhorn"></i>
+        <span>ما هو الجديد</span>
+      </a>
+      <a href="{root_prefix}about/docs%20status/status.htm" class="nav-btn">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>موقف المستندات</span>
+      </a>
+      <a href="{root_prefix}arabic_web/Ar_forms/A_form.htm" class="nav-btn">
+        <i class="fa-solid fa-file-invoice"></i>
+        <span>النماذج</span>
+      </a>
+      <a href="{root_prefix}arabic_web/Ar_Index.htm" class="nav-btn">
+        <i class="fa-solid fa-house"></i>
+        <span>الصفحة الرئيسية</span>
+      </a>
+      <a href="{root_prefix}arabic_web/Ar_about/Ar_about.htm" class="nav-btn">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>ما هو الـ MPIS</span>
+      </a>
+      <a href="{root_prefix}arabic_web/Ar_admin_inst/Ar_draf_doc.htm" class="nav-btn">
+        <i class="fa-solid fa-sliders"></i>
+        <span>التعليمات الإدارية</span>
+      </a>
+      <a href="{root_prefix}draf_docs/draf_doc.htm" class="nav-btn">
+        <i class="fa-solid fa-file-signature"></i>
+        <span>مسودة المستندات</span>
+      </a>
+      <a href="{root_prefix}Coordinators/MPIS_Coord_main%20Page.htm" class="nav-btn">
+        <i class="fa-solid fa-users-gear"></i>
+        <span>المنسقون</span>
+      </a>
+    </nav>
+
+    <!-- Category Title Banner -->
+    <div class="page-title-banner">
+      {title}
+    </div>
+
+    <!-- Document Table -->
+    {content_html}
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <p class="footer-copy">حقوق الطبع محفوظة &copy; الشركة القابضة لكهرباء مصر، قطاع تطوير نظم الصيانة ومراقبة الجودة 2026.</p>
+      <p class="footer-note">تم تطوير الصفحات وتحديثها بمعرفة إدارة الشئون الفنية بمنطقة كهرباء مصر الوسطى</p>
+    </footer>
+  </div>
+</body>
+</html>"""
+
 # Generate category HTML files
 for cat_key, cat_data in categories.items():
     title_ar = cat_data["title"]
     filename = cat_data["filename"]
     docs = cat_data["docs"]
     
-    # 1. Start with the header template
-    cat_soup = BeautifulSoup(str(header_soup), "html.parser")
-    cat_table = cat_soup.find("table")
-    
-    # Set proper encoding meta tag to UTF-8
-    meta_charset = cat_soup.find("meta", attrs={"http-equiv": "Content-Type"})
-    if meta_charset:
-        meta_charset["content"] = "text/html; charset=utf-8"
-    else:
-        meta_c = cat_soup.find("meta", charset=True)
-        if meta_c:
-            meta_c["charset"] = "utf-8"
-        else:
-            new_meta = cat_soup.new_tag("meta", attrs={"http-equiv": "Content-Type", "content": "text/html; charset=utf-8"})
-            if cat_soup.head:
-                cat_soup.head.insert(0, new_meta)
-    
-    # Update <title> element
-    title_el = cat_soup.find("title")
-    if title_el:
-        title_el.string = f"MPIS - {title_ar}"
-        
-    # Update category header cell text "محطات المحولات" to the specific category name
-    header_td = cat_soup.find("td", width="553", valign="middle")
-    if header_td:
-        font_el = header_td.find("font", face="Traditional Arabic")
-        if font_el and font_el.find("span"):
-            font_el.find("span").string = title_ar
-        else:
-            header_td.string = title_ar
-            
-    # Adjust relative paths in the header navigation
-    adjust_soup_paths(cat_soup)
-    
-    # Update style, body background, and images in the header soup to depth 4
-    for link in cat_soup.find_all("link", rel="stylesheet"):
-        href = link.get("href", "")
-        if "style.css" in href:
-            link["href"] = "../../../../style.css?v=2"
-            
-    body = cat_soup.find("body")
-    if body and body.get("background"):
-        body["background"] = body["background"].replace("../../../images/", "../../../../images/")
-        
-    for img in cat_soup.find_all("img"):
-        src = img.get("src", "")
-        if "../../../images/" in src:
-            img["src"] = src.replace("../../../images/", "../../../../images/")
-
-    # 2. Add document rows
+    table_rows_html = ""
     if len(docs) > 0:
         sorted_docs = sorted(docs, key=lambda x: x["doc_id"].upper())
         for doc in sorted_docs:
             if doc["type"] == "row":
-                # Original row (make a clean copy and adjust links inside it)
                 r_soup = BeautifulSoup(str(doc["row_soup"]), "html.parser").tr
                 adjust_soup_paths(r_soup)
-                cat_table.append(r_soup)
+                table_rows_html += str(r_soup) + "\n"
             else:
-                # Extra metadata row
                 title_full = doc["title"]
                 if doc["procedure"]:
                     title_full = f"{title_full} - {doc['procedure']}"
                 r_soup = make_html_row(doc["date"], title_full, doc["href"], doc["doc_id"])
-                cat_table.append(r_soup)
+                table_rows_html += str(r_soup) + "\n"
     else:
-        # Empty placeholder row
-        cat_table.append(make_empty_row())
+        r_soup = make_empty_row()
+        table_rows_html += str(r_soup) + "\n"
         
-    # 3. Add closing tags
-    output_file = os.path.join(output_dir, filename)
-    final_html = str(cat_soup)
-    final_html += "\n<![if !supportEmptyParas]>\n\n</BODY></HTML>"
+    content_html = f"""<table border="1" width="100%">
+      <thead>
+        <tr>
+          <th width="15%" align="center">تاريخ الاعتماد</th>
+          <th width="70%" align="center">اسم المستند</th>
+          <th width="15%" align="center">رقم المستند</th>
+        </tr>
+      </thead>
+      <tbody>
+{table_rows_html}      </tbody>
+    </table>"""
     
+    final_html = modern_page_template.format(
+        title=title_ar,
+        root_prefix="../../../../",
+        content_html=content_html
+    )
+    
+    output_file = os.path.join(output_dir, filename)
     with open(output_file, "w", encoding="utf-8") as out_f:
         out_f.write(final_html)
         
