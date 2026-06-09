@@ -1,0 +1,485 @@
+[
+  {
+    "doc_id": "B-016-r0a",
+    "title": "البطاريات القلوية 175 خلية E5KPM250P FERAK- CZECHOSLOVAKIA",
+    "procedure": "الصيانة الأسبوعية (I1-W1)",
+    "date": "17 نوفمبر 2002",
+    "filename": "b-016-r0a.htm"
+  },
+  {
+    "doc_id": "B-017-r0a",
+    "title": "البطاريات القلوية 175خلية A5KPM 250P FERAK CZECHOSLOVAKIA",
+    "procedure": "الصيانة الشهربة (I2-M1)",
+    "date": "17 نوفمبر 2002",
+    "filename": "b-017-r0a.htm"
+  },
+  {
+    "doc_id": "B-018-r0",
+    "title": "البطاريات القلوية 175خلية E5KPM250P FERAK- CZECHOSLOVAKIA",
+    "procedure": "الصيانة السنوية (I3-Y3)",
+    "date": "17 نوفمبر 2002",
+    "filename": "b-018-r0a.htm"
+  },
+  {
+    "doc_id": "B-027-r0a",
+    "title": "البطاريات",
+    "procedure": "تغيير عمود أو مجموعة أعمدة تالفة بالبطارية",
+    "date": "19 مارس 2005",
+    "filename": "b-027-r0a.htm"
+  },
+  {
+    "doc_id": "B-031-r0a",
+    "title": "البطاريات",
+    "procedure": "قياس المقاومة الداخلية للأعمدة بواسطة جهاز HIOKI 3550",
+    "date": "11 يوليو 2004",
+    "filename": "B-031-r0a.htm"
+  },
+  {
+    "doc_id": "BB-001-r0a",
+    "title": "قضبان التوزيع 11 ك ف AEG",
+    "procedure": "الصيانة النصف سنوية (I1-M6)",
+    "date": "26 فبراير 2003",
+    "filename": "BB-001-r0a.htm"
+  },
+  {
+    "doc_id": "BB-001-r0a",
+    "title": "قضبان التوزيع 11 ك ف AEG",
+    "procedure": "الصيانة النصف سنوية I1-M6",
+    "date": "26 فبراير 2003",
+    "filename": "BB-001-r0a_old.htm"
+  },
+  {
+    "doc_id": "BB-002-r0a",
+    "title": "القضبان جهد 22 ك ف ABB-ARAB",
+    "procedure": "الصيانة النصف سنوية (I1-M6)",
+    "date": "26 فبراير 2002",
+    "filename": "BB-002-r0a.htm"
+  },
+  {
+    "doc_id": "BB-003-r0a",
+    "title": "القضبان جهد 11 ك فABB-ARAB",
+    "procedure": "اختبار عزل القضبان (I1-M6)",
+    "date": "11 يوليو 2004",
+    "filename": "BB-003-r0a.htm"
+  },
+  {
+    "doc_id": "C-001-r0a",
+    "title": "المكثفات جهد 11 ك ف فنلندى NOKIA",
+    "procedure": "الصيانة الدورية ( I1 - M6 )",
+    "date": "03 سبتمبر 2005",
+    "filename": "C-001-r0a.htm"
+  },
+  {
+    "doc_id": "CB-023-r0a",
+    "title": "القاطع الغازى SF6 جهد 220 ك ف HPL300/31A2 ، HPL245/25B1 ABB",
+    "procedure": "الصيانة كل 6 أشهر (I1-M6)",
+    "date": "النشر 6 أبريل 2002",
+    "filename": "cb-023-r0a.htm"
+  },
+  {
+    "doc_id": "CB-039-r0a",
+    "title": "القاطع الكهربى GIS جهد 220 ك ف AR2 300 AEG",
+    "procedure": "العمرة الجسيمة كل 10سنوات P2-Y10",
+    "date": "18 مايو 2002",
+    "filename": "cb-039-r0a.htm"
+  },
+  {
+    "doc_id": "CB-052-r0a",
+    "title": "القاطع الغازى SF6 جهد 220 ك ف HPL-300/31A2, HPL245/25B1 ABB",
+    "procedure": "الصيانة ما بين سنه أو سنتين (P1-Y1:2)",
+    "date": "النشر 6 أبريل 2002",
+    "filename": "cb-052-r0a.htm"
+  },
+  {
+    "doc_id": "CB-086-r0a",
+    "title": "المفتاح قليل الزيت جهد 11 ك ف RMB 806-12/12-2/1/8/17 AEG",
+    "procedure": "الصيانة الشهرية (I1-M1)",
+    "date": "18 نوفمبر 2001",
+    "filename": "cb-086-r0a.htm"
+  },
+  {
+    "doc_id": "CB-087-r0a",
+    "title": "ميكانيزم القاطع GIS جهد 220ك ف AR2 300 AEG",
+    "procedure": "تغير جوان الأسطوانة الخاصة بحركة العمود الرئيسى للملامس المتحرك لميكانيزم القاطع",
+    "date": "26 فبراير 2002",
+    "filename": "cb-087-r0a.htm"
+  },
+  {
+    "doc_id": "CB-092-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "26 فبراير 2002",
+    "filename": "cb-092-r0a.htm"
+  },
+  {
+    "doc_id": "CB-140-r0a",
+    "title": "القاطع الغازي التقليدي SF6 جهد 500 ، 220 ك ف S2-300 ، S 4M-525 AEG",
+    "procedure": "العمرة الجسيمة كل20سنة/ 2000 مرة تشغيل/ 600ك أ تيار قصر",
+    "date": "21 أكتوبر 2002",
+    "filename": "CB-140-r0a.htm"
+  },
+  {
+    "doc_id": "CB-146-r0a",
+    "title": "القاطع الكهربي الغازي التقليدي 220 ك ف m8D4 Siemens",
+    "procedure": "الصيانة كل 4 سنوات (P1-Y4)",
+    "date": "15 مارس 03",
+    "filename": "cb-146-r0a.htm"
+  },
+  {
+    "doc_id": "CB-148-r0a",
+    "title": "القاطع الكهربي الغازي التقليدي 220 ك ف x8D4 Siemens",
+    "procedure": "الصيانة كل 16 سنة (P1-Y16)",
+    "date": "15 مارس 03",
+    "filename": "cb-148-r0a.htm"
+  },
+  {
+    "doc_id": "CB-149-r0a",
+    "title": "القاطع الكهربي الغازي التقليدي 220 ك ف x8D4 Siemens",
+    "procedure": "الصيانة بعد حدوث قصر",
+    "date": "15 مارس 2003",
+    "filename": "cb-149-r0a.htm"
+  },
+  {
+    "doc_id": "CB-153-r0a",
+    "title": "قاطع التيار المفرغ من الهواء Vacuum جهد11ك ف x3AF EGEMAC مصر",
+    "procedure": "الصيانة السنوية (I2-Y1 )",
+    "date": "26 فبراير 2003",
+    "filename": "CB-153-r0a.htm"
+  },
+  {
+    "doc_id": "CB-154-r0a",
+    "title": "قاطع التيار المفرغ من الهواء Vacuum جهد11ك ف M3AF EGEMAC",
+    "procedure": "الصيانة كل 4 أشهر (I1-M4 )",
+    "date": "26 فبراير 2003",
+    "filename": "CB-154-r0a.htm"
+  },
+  {
+    "doc_id": "CB-155-r0a",
+    "title": "قاطع التيار الغازى التقليدى جهد 22 ك ف ِِِِ HB 24 - 12 - 25 ABB - ARAB - مصر",
+    "procedure": "الصيانة السنوية (I2-Y1 )",
+    "date": "26 فبراير 2003",
+    "filename": "CB-155-r0a.htm"
+  },
+  {
+    "doc_id": "CB-156-r0a",
+    "title": "قاطع التيار الغازي التقليدى جهد 22 ك ف HB 24 - 12 - 25 ABB - ARAB - مصر",
+    "procedure": "الصيانة النصف سنوية (I2-M6 )",
+    "date": "26فباير 2003",
+    "filename": "CB-156-r0a.htm"
+  },
+  {
+    "doc_id": "CB-157-r0a",
+    "title": "اعمل إجراءات مناورة إعادة توصيل  بمعرفة التشغيل مع التحكم الإقليمي",
+    "procedure": "الصيانة الدورية كل 3 شهور M3",
+    "date": "25 مارس 2003",
+    "filename": "CB-157-r0a.htm"
+  },
+  {
+    "doc_id": "CB-225-r0a",
+    "title": "القواطع الكهربية باستخدام جهاز DOBLE TR3000 Group",
+    "procedure": "قياس الأداء للقواطع كهربيا وميكانيكيا (P1-Y2)",
+    "date": "24 يوليو 2005",
+    "filename": "CB-225-r0a.htm"
+  },
+  {
+    "doc_id": "CB-226-r0a",
+    "title": "القواطع الكهربية Programa TM 160باستخدام جهاز",
+    "procedure": "قياس الزمن للقواطع (P1-Y2)",
+    "date": "24 يوليو 2005",
+    "filename": "CB-226-r0a.htm"
+  },
+  {
+    "doc_id": "CB-227-r0a",
+    "title": "القواطع الزيتية 11 ك ف DR-50 MG",
+    "procedure": "الصيانة السنوية (I1-Y1)",
+    "date": "06 أبريل 2005",
+    "filename": "CB-227-r0a.htm"
+  },
+  {
+    "doc_id": "CB-245-r0a",
+    "title": "قواطع التيار GIS جهد 220 ك ف طراز GSPK-200P1 توشيبا",
+    "procedure": "قياس زمن فصل وتوصيل (P1-Y1 )",
+    "date": "23 مايو 2005",
+    "filename": "cb-245-r0a.htm"
+  },
+  {
+    "doc_id": "CB-246-r0a",
+    "title": "القواطع الغازية SF6 التقليدية جهد 66ك ف HPL 72.5 - 170 / 25A1 - 40 A1 بلغارى",
+    "procedure": "الصيانة كل 6 شهور (I1 - M6)",
+    "date": "12 يولية 2005",
+    "filename": "CB-246-r0a.htm"
+  },
+  {
+    "doc_id": "CB-247-r0a",
+    "title": "القواطع الغازية SF6 التقليدية جهد 66ك ف HPL 72.5 - 170 / 25A1 - 40 A1 بلغارى",
+    "procedure": "الصيانة من سنة الى سنتين (P1-Y1:2)",
+    "date": "12 يوليو 2005",
+    "filename": "CB-247-r0a.htm"
+  },
+  {
+    "doc_id": "CB-248-r0a",
+    "title": "القواطع الغازية SF6 التقليدية جهد 66 ك ف HPL 72.5 - 170 / 25A1 - 40 A1 بلغارى",
+    "procedure": "يتم تنفيذ ات المدونة بالمستند رقم CB-247-r0a الخاص بالصيانة من سنة الى سنتين",
+    "date": "12 يوليو 2005",
+    "filename": "CB-248-r0a.htm"
+  },
+  {
+    "doc_id": "CB-249-r0a",
+    "title": "القواطع الغازية SF6 التقليدية جهد 66 ك ف FL1 جنرال اليكتريك أمريكا",
+    "procedure": "الصيانة كل ثلاثة أشهر (I1-M3)",
+    "date": "05 يوليو 2005",
+    "filename": "CB-249-r0a.htm"
+  },
+  {
+    "doc_id": "cb-292-r0a",
+    "title": "القواطع المفرغة جهد 11ك ف 10-VPR-25B MITSUBISHI - Japan",
+    "procedure": "الصيانة كل ثلاثة أشهر (I1-M3)",
+    "date": "المستند 19 سبتمبر 2007",
+    "filename": "cb-292-r0a.htm"
+  },
+  {
+    "doc_id": "cb-cmntSuezY8-r0a",
+    "title": "القاطع الكهربي الغازي التقليدي 220ك ف z8D4 Siemens",
+    "procedure": "الصيانة كل 8سنوات (P1-Y8)",
+    "date": "",
+    "filename": "cb-cmntSuezY8-r0a.htm"
+  },
+  {
+    "doc_id": "Ch-010-r0a",
+    "title": "شاحن البطارية c3PF-2-60 CHLORIDE",
+    "procedure": "الصيانة الشهرية (I2-M1)",
+    "date": "17 نوفمبر 2002",
+    "filename": "ch-010-r0a.htm"
+  },
+  {
+    "doc_id": "Ch-012-r0a",
+    "title": "شاحن البطارية C3PF-2-60 CHLORIDE",
+    "procedure": "الصيانة السنوية (I3-Y1)",
+    "date": "17 نوفمبر 2002",
+    "filename": "ch-012-r0a.htm"
+  },
+  {
+    "doc_id": "Ch-011-r0a",
+    "title": "شاحن البطارية C3PF-2-60 CHLORIDE",
+    "procedure": "الصيانة كل ثلاثة شهور (I3-M3)",
+    "date": "17 نوفمبر 2002",
+    "filename": "ch011-r0a.htm"
+  },
+  {
+    "doc_id": "CT-014-r0a",
+    "title": "محولات التيار جهد 500 ، 400 ، 220 ك ف CTH 550,CTH 420, QDR-245 ALSTHOM",
+    "procedure": "الصيانة السنوية (I1 -Y1)",
+    "date": "27 يوليو 2005",
+    "filename": "CT-014-r0a.htm"
+  },
+  {
+    "doc_id": "DS-010-r0a",
+    "title": "سكينة جهد 66ك ف طراز :RT-MM Elbrom turbo-bulgaria",
+    "procedure": "الصيانة السنوية (I2-Y1)",
+    "date": "17 نوفمبر 2002",
+    "filename": "ds-010-r0a.htm"
+  },
+  {
+    "doc_id": "ds-030-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "ds-030-r0a.htm"
+  },
+  {
+    "doc_id": "DS-035-r0a",
+    "title": "سكينة جهد 66 ك ف طراز: SGF 72.5 صناعة: ABB-ARAB",
+    "procedure": "الصيانة كل ثلاثة شهور I1-M3",
+    "date": "17 نوفمبر 2002",
+    "filename": "ds-035-r0a.htm"
+  },
+  {
+    "doc_id": "DS-036-r0a",
+    "title": "سكينة جهد 66 ك ف SGF 72.5 ABB-ARAB",
+    "procedure": "الصيانة السنوية I1-Y1",
+    "date": "17 نوفمبر 2002",
+    "filename": "ds-036-r0a.htm"
+  },
+  {
+    "doc_id": "DS-037-r0a",
+    "title": "السكينة جهد 66 ك ف RT-MM Bulgaria-EL BromTurbo",
+    "procedure": "الصيانة كل ثلاثة شهور (I1-M3)",
+    "date": "17 نوفمبر 2002",
+    "filename": "ds-037-r0a.htm"
+  },
+  {
+    "doc_id": "DS-043-r0a",
+    "title": "سكينة جهد 500 ، 400 ، 220 ك ف S2DA-L , S2DAT-L ALSTHOM",
+    "procedure": "الصيانة السنوية أو كل 1000 مرة تشغيل (فصل أو توصيل) أيهما أقرب (I1 -Y1)",
+    "date": "27 يوليو 2005",
+    "filename": "DS-043-r0a.htm"
+  },
+  {
+    "doc_id": "FS-031-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "FS-031-r0a.htm"
+  },
+  {
+    "doc_id": "PT-009-r0a",
+    "title": "راجع التوصيات الرئيسية السنوية تعتمد على الظروف الخارجية مثل ( التلوث و درجة الحرارة ) و تكون كالتالى  فصل  ( محول الجهد ) حسب المناورة و فحصها و خصوصاً الآتى -",
+    "procedure": "الصيانة السنوية (I1 -Y1)",
+    "date": "27 يوليو 2005",
+    "filename": "PT-009-r0a.htm"
+  },
+  {
+    "doc_id": "T-002-r1a",
+    "title": "محولات القدرة 25 م ف أ 11/66 ك ف",
+    "procedure": "قائمة الفحص من شهر إلى 3 أشهر I1-M1:3",
+    "date": "17 أكتوبر 2001",
+    "filename": "T-002-r0a.htm"
+  },
+  {
+    "doc_id": "T-003-r0a",
+    "title": "محولات القدرة 125 م ف أ ترافو يونيون",
+    "procedure": "قائمة الفحص السنوى I1-Y1",
+    "date": "المستند 06 سبتمبر 1999",
+    "filename": "T-003-r0a.htm"
+  },
+  {
+    "doc_id": "T-004-r1a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "T-004-r1a.htm"
+  },
+  {
+    "doc_id": "T-005-r0a",
+    "title": "محولات القدرة 125 م ف أ فوجى",
+    "procedure": "الفحص السنوى (I1-Y1)",
+    "date": "المستند 06 سبتمبر 1999",
+    "filename": "T-005-r0a.htm"
+  },
+  {
+    "doc_id": "T-022-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "T-022-r0a.htm"
+  },
+  {
+    "doc_id": "T-024-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "T-024-r0a.htm"
+  },
+  {
+    "doc_id": "T-025-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "T-025-r0a.htm"
+  },
+  {
+    "doc_id": "T-026-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "T-026-r0a.htm"
+  },
+  {
+    "doc_id": "T-027-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "T-027-r0a.htm"
+  },
+  {
+    "doc_id": "T-032-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "T-032-r0a.htm"
+  },
+  {
+    "doc_id": "T-033-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "T-033-r0a.htm"
+  },
+  {
+    "doc_id": "T-041-r0a",
+    "title": "محولات القدرة 11/66 ك ف 25 م ف ا ELPROM TRAFO-TMPY BULGARIA",
+    "procedure": "الفحص الأسبوعى (I1-W1)",
+    "date": "10 ابريل 2002",
+    "filename": "T-041-r0a.htm"
+  },
+  {
+    "doc_id": "T-042-r0a",
+    "title": "محولات القدرة جهد 11/66 ك ف 25 م ف أ ELPROM TRAFO-TMPY BULGARIA",
+    "procedure": "الصيانة كل ثلاثة شهور (I2-M3)",
+    "date": "17 نوفمبر 2002",
+    "filename": "T-042-r0a.htm"
+  },
+  {
+    "doc_id": "T-043-r0a",
+    "title": "محولات القدرة جهد 11/66 ك ف 25 م ف أ ELPROM TRAFO-TMPY BULGARIA",
+    "procedure": "الصيانة السنوية (I3-Y1)",
+    "date": "17 نوفمبر 2002",
+    "filename": "T-043-r0a.htm"
+  },
+  {
+    "doc_id": "T-044-r0a",
+    "title": "محولات القدرة جهد 22/66 ك ف 25 م ف ا ABB-Turkey-tosh turkey",
+    "procedure": "الصيانة الأسبوعية للمحول (I1-W1)",
+    "date": "11 نوفمبر 2002",
+    "filename": "T-044-r0a.htm"
+  },
+  {
+    "doc_id": "T-045-r0a",
+    "title": "محولات القدرة جهد 22/66 ك ف 25 م ف أ ABB-Turkey-tpsh Turkey",
+    "procedure": "الصيانة كل ثلاثة شهور (I1-M3)",
+    "date": "17 نوفمبر 2002",
+    "filename": "T-045-r0a.htm"
+  },
+  {
+    "doc_id": "T-046-r0a",
+    "title": "محولات القدرة جهد 22/66 ك ف 25 م ف أ ABB-Turkey-tpsh Turkey",
+    "procedure": "الصيانة السنوية (I3-Y1)",
+    "date": "17 نوفمبر 2002",
+    "filename": "T-046-r0a.htm"
+  },
+  {
+    "doc_id": "TC-001-r0a",
+    "title": "مغير الجهد 66 ك ف طراز V MR",
+    "procedure": "العمرة الجسيمة كل 5 سنوات",
+    "date": "12 مارس 2005",
+    "filename": "tc-001-r0a.htm"
+  },
+  {
+    "doc_id": "TC-004-r0a",
+    "title": "",
+    "procedure": "",
+    "date": "",
+    "filename": "TC-004-r0a.htm"
+  },
+  {
+    "doc_id": "TC-005-r0a",
+    "title": "مغير الجهد 220 ك ف CRNGS 230 - 2/533 - 521/40 - 16 Trafo - union",
+    "procedure": "العمرة الجسيمة P1",
+    "date": "24 يوليو 2005",
+    "filename": "tc-005-r0a.htm"
+  },
+  {
+    "doc_id": "TD-SS-001-r1a",
+    "title": "",
+    "procedure": "",
+    "date": "النشر 6 فبراير 2002",
+    "filename": "TD-SS-001-r1a.htm"
+  },
+  {
+    "doc_id": "TD-SS-003-r2a",
+    "title": "",
+    "procedure": "",
+    "date": "المستند 06 1999",
+    "filename": "TD-SS-003-r2a.htm"
+  }
+]
