@@ -281,9 +281,9 @@ def make_html_row(date, title, href, doc_id):
     <TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" align=center width=194 height=25 dir="rtl">
       <p dir="rtl"><b><font face="Traditional Arabic"><span lang="ar-sa">{date}</span></font></b></TD>
     <TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" align=right width=1010 height=1 dir="rtl">
-      <p align="right"><b><span dir="rtl"><font face="Traditional Arabic">&nbsp;<a href="{href}"><font color="#000000">{title}</font></a></font></span></b></TD>
+      <p align="right"><b><span dir="rtl"><font face="Traditional Arabic">&nbsp;<a href="{href}">{title}</a></font></span></b></TD>
     <td valign="top" width="98" height="7" style="border-style: none; border-width: medium" align="center">
-      <b><font size="2" face="Arial"><span dir="ltr"><a href="{href}"><font color="#000000">{doc_id}</font></a></span></font></b></td>
+      <b><font size="2" face="Arial"><span dir="ltr"><a href="{href}">{doc_id}</a></span></font></b></td>
   </tr>"""
     return BeautifulSoup(row_html, "html.parser").tr
 
@@ -343,7 +343,7 @@ for cat_key, cat_data in categories.items():
     for link in cat_soup.find_all("link", rel="stylesheet"):
         href = link.get("href", "")
         if "style.css" in href:
-            link["href"] = "../../../../style.css"
+            link["href"] = "../../../../style.css?v=2"
             
     body = cat_soup.find("body")
     if body and body.get("background"):

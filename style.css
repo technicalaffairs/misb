@@ -644,6 +644,17 @@ body:not(.homepage-body) font {
   font-family: inherit !important;
 }
 
+body:not(.homepage-body) font[color="#000000"],
+body:not(.homepage-body) font[color="#111111"],
+body:not(.homepage-body) font[color="#222222"],
+body:not(.homepage-body) font[color="black"],
+body:not(.homepage-body) [style*="color: #000000"],
+body:not(.homepage-body) [style*="color:#000000"],
+body:not(.homepage-body) [style*="color: black"],
+body:not(.homepage-body) [style*="color:black"] {
+  color: inherit !important;
+}
+
 body:not(.homepage-body) font[color="#0000ff"],
 body:not(.homepage-body) font[color="blue"],
 body:not(.homepage-body) font[color="#0000FF"] {
