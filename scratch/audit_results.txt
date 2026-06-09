@@ -1,0 +1,361 @@
+================================================================================
+MPIS Arabic Files Audit Report
+================================================================================
+Total files scanned : 196
+  ERRORS  : 21
+  WARNINGS: 9
+  OK      : 166
+
+================================================================================
+[ERROR] Files with critical issues:
+================================================================================
+
+  FILE: Ar_Distrib_Board.htm  [11 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_Distrib_Board.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_Batteries.htm  [21 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_Batteries.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_Busbars.htm  [13 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_Busbars.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_CBs.htm  [43 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_CBs.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_CT_PT_LA.htm  [12 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_CT_PT_LA.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_DS_ES.htm  [20 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_DS_ES.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_TB-SS+PS.htm  [11 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_TB-SS+PS.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_TD-SS+PS.htm  [13 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_TD-SS+PS.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_Trafo.htm  [26 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_Trafo.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_compressors.htm  [11 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_compressors.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_condensers.htm  [11 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_condensers.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: Ar_ad_tap_changers.htm  [13 KB] [windows-1256]
+  PATH: Ar_appr_docs\Ar_ad_subst\Ar_ad_tap_changers.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: EFR-002-r0a.htm  [29 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_pc\ad_pc_docs\EFR-002-r0a.htm
+  Arabic chars: 38  |  Arabic ratio: 18%
+    >> [WARN] Old charset: text/html; charset=windows-1256 — upgrade to UTF-8
+    >> [ERROR] Very little Arabic content: 38 chars — file may be empty/untranslated
+
+  FILE: EFR-003-r0a.htm  [37 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_pc\ad_pc_docs\EFR-003-r0a.htm
+  Arabic chars: 38  |  Arabic ratio: 6%
+    >> [WARN] Old charset: text/html; charset=windows-1256 — upgrade to UTF-8
+    >> [ERROR] Very little Arabic content: 38 chars — file may be empty/untranslated
+
+  FILE: Gn-001-r0a.htm  [1 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_trans\ad_il_docs\Arabic version\Gn-001-r0a.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: T-032-r0a.htm  [16 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_subst\ad_ss_docs\T-032-r0a.htm
+  Arabic chars: 6  |  Arabic ratio: 25%
+    >> [WARN] Old charset: text/html; charset=windows-1256 — upgrade to UTF-8
+    >> [ERROR] Very little Arabic content: 6 chars — file may be empty/untranslated
+
+  FILE: T-033-r0a.htm  [33 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_subst\ad_ss_docs\T-033-r0a.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] Old charset: text/html; charset=windows-1256 — upgrade to UTF-8
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: TD-Oil-012-r0a.htm  [496 KB] [utf-8]
+  PATH: Ar_draf_docs\Ar_draf_chem\Ar_draf_chm\TD-Oil-012-r0a.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] Old charset: text/html; charset=windows-1256 — upgrade to UTF-8
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: TL-tmp2-r0a.htm  [27 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_trans\ad_il_docs\TL-tmp2-r0a.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] Old charset: text/html; charset=windows-1256 — upgrade to UTF-8
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: header.htm  [12 KB] [utf-8]
+  PATH: Ar_draf_docs\Ar_draf_chem\Ar_draf_chm\TD-Oil-012-r0a.files\header.htm
+  Arabic chars: 0  |  Arabic ratio: 0%
+    >> [WARN] Old charset: text/html; charset=windows-1256 — upgrade to UTF-8
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 0 chars — file may be empty/untranslated
+
+  FILE: td-tl-004-r0a.htm  [1 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_trans\ad_il_docs\Arabic version\td-tl-004-r0a.htm
+  Arabic chars: 5  |  Arabic ratio: 45%
+    >> [WARN] Old charset: text/html; charset=windows-1252 — upgrade to UTF-8
+    >> [WARN] <html> tag missing dir="rtl"
+    >> [ERROR] Very little Arabic content: 5 chars — file may be empty/untranslated
+
+================================================================================
+[WARN] Files with warnings:
+================================================================================
+
+  FILE: Ar_whatsnew_03.htm  [115 KB] [utf-8]
+  PATH: Ar_whatsnew\Ar_whatsnew_03.htm
+  Arabic chars: 7168  |  Arabic ratio: 90%
+    >> [WARN] No CSS stylesheet link found
+
+  FILE: CB-140-r0a.htm  [345 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_subst\ad_ss_docs\CB-140-r0a.htm
+  Arabic chars: 10839  |  Arabic ratio: 81%
+    >> [WARN] Untranslated English procedure words: Bushing(1x)
+
+  FILE: OCR-007-r0a.htm  [39 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_pc\ad_pc_docs\OCR-007-r0a.htm
+  Arabic chars: 68  |  Arabic ratio: 8%
+    >> [WARN] Low Arabic ratio 8% — may have untranslated English procedures
+
+  FILE: OCR-008-r0a.htm  [27 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_pc\ad_pc_docs\OCR-008-r0a.htm
+  Arabic chars: 68  |  Arabic ratio: 13%
+    >> [WARN] Low Arabic ratio 13% — may have untranslated English procedures
+
+  FILE: TC-004-r0a.htm  [57 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_subst\ad_ss_docs\TC-004-r0a.htm
+  Arabic chars: 162  |  Arabic ratio: 16%
+    >> [WARN] Low Arabic ratio 16% — may have untranslated English procedures
+
+  FILE: TD-SS-003-r2a.htm  [30 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_subst\ad_ss_docs\TD-SS-003-r2a.htm
+  Arabic chars: 89  |  Arabic ratio: 21%
+    >> [WARN] Low Arabic ratio 21% — may have untranslated English procedures
+
+  FILE: ds-030-r0a.htm  [33 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_subst\ad_ss_docs\ds-030-r0a.htm
+  Arabic chars: 187  |  Arabic ratio: 16%
+    >> [WARN] Low Arabic ratio 16% — may have untranslated English procedures
+    >> [WARN] Untranslated English procedure words: Disconnect(2x)
+
+  FILE: header.htm  [12 KB] [utf-8]
+  PATH: Ar_appr_docs\Ar_ad_trans\ad_il_docs\Arabic version\Ins-003-r1a+ LITL06_files\header.htm
+  Arabic chars: 110  |  Arabic ratio: 96%
+    >> [WARN] Old charset: text/html; charset=windows-1252 — upgrade to UTF-8
+    >> [WARN] <html> tag missing dir="rtl"
+
+  FILE: whatsnew_02.htm  [332 KB] [utf-8]
+  PATH: Ar_whatsnew\whatsnew_02.htm
+  Arabic chars: 24871  |  Arabic ratio: 95%
+    >> [WARN] No CSS stylesheet link found
+
+================================================================================
+[OK] Clean files:
+================================================================================
+  OK  A_draf_gen.htm  [50 KB]  AR:73%  (463 chars)
+  OK  A_form.htm  [11 KB]  AR:86%  (468 chars)
+  OK  Ar_Distrib_Board.htm  [7 KB]  AR:93%  (567 chars)
+  OK  Ar_Index.htm  [18 KB]  AR:86%  (1493 chars)
+  OK  Ar_SSdraf.htm  [13 KB]  AR:91%  (298 chars)
+  OK  Ar_about.htm  [21 KB]  AR:97%  (3728 chars)
+  OK  Ar_ad_Batteries.htm  [17 KB]  AR:84%  (942 chars)
+  OK  Ar_ad_Busbars.htm  [9 KB]  AR:89%  (603 chars)
+  OK  Ar_ad_CBs.htm  [41 KB]  AR:83%  (1862 chars)
+  OK  Ar_ad_CT_PT_LA.htm  [8 KB]  AR:91%  (713 chars)
+  OK  Ar_ad_DS_ES.htm  [16 KB]  AR:84%  (786 chars)
+  OK  Ar_ad_TB-SS+PS.htm  [7 KB]  AR:93%  (569 chars)
+  OK  Ar_ad_TD-SS+PS.htm  [9 KB]  AR:89%  (570 chars)
+  OK  Ar_ad_Trafo.htm  [32 KB]  AR:91%  (1704 chars)
+  OK  Ar_ad_chem.htm  [13 KB]  AR:93%  (284 chars)
+  OK  Ar_ad_compressors.htm  [7 KB]  AR:93%  (557 chars)
+  OK  Ar_ad_condensers.htm  [7 KB]  AR:91%  (544 chars)
+  OK  Ar_ad_pc.htm  [63 KB]  AR:78%  (1478 chars)
+  OK  Ar_ad_subst.htm  [96 KB]  AR:85%  (2588 chars)
+  OK  Ar_ad_tap_changers.htm  [9 KB]  AR:88%  (570 chars)
+  OK  Ar_ad_trans.htm  [28 KB]  AR:94%  (818 chars)
+  OK  Ar_appr_doc.htm  [17 KB]  AR:96%  (967 chars)
+  OK  Ar_draf_chem.htm  [31 KB]  AR:82%  (1217 chars)
+  OK  Ar_draf_doc.htm  [10 KB]  AR:92%  (571 chars)
+  OK  Ar_draf_doc.htm  [12 KB]  AR:94%  (194 chars)
+  OK  Ar_draf_pc.htm  [37 KB]  AR:80%  (740 chars)
+  OK  Ar_draf_tl.htm  [14 KB]  AR:97%  (415 chars)
+  OK  Ar_index_old.htm  [13 KB]  AR:94%  (463 chars)
+  OK  Ar_sample mpis_PC.htm  [15 KB]  AR:94%  (483 chars)
+  OK  Ar_whatsnew.htm  [6 KB]  AR:92%  (476 chars)
+  OK  B-031-r0a.htm  [337 KB]  AR:83%  (2383 chars)
+  OK  BB-001-r0a.htm  [71 KB]  AR:99%  (3166 chars)
+  OK  BB-001-r0a_old.htm  [34 KB]  AR:98%  (1238 chars)
+  OK  BB-002-r0a.htm  [47 KB]  AR:99%  (2693 chars)
+  OK  BB-003-r0a.htm  [73 KB]  AR:65%  (2195 chars)
+  OK  BFR-004-r0a.htm  [101 KB]  AR:58%  (2012 chars)
+  OK  C-001-r0a.htm  [43 KB]  AR:96%  (1693 chars)
+  OK  CB-153-r0a.htm  [51 KB]  AR:98%  (2417 chars)
+  OK  CB-154-r0a.htm  [48 KB]  AR:98%  (2304 chars)
+  OK  CB-155-r0a.htm  [40 KB]  AR:98%  (2007 chars)
+  OK  CB-156-r0a.htm  [38 KB]  AR:98%  (1995 chars)
+  OK  CB-157-r0a.htm  [43 KB]  AR:95%  (1810 chars)
+  OK  CB-225-r0a.htm  [92 KB]  AR:86%  (4590 chars)
+  OK  CB-226-r0a.htm  [87 KB]  AR:97%  (4786 chars)
+  OK  CB-227-r0a.htm  [40 KB]  AR:99%  (1356 chars)
+  OK  CB-246-r0a.htm  [34 KB]  AR:91%  (1247 chars)
+  OK  CB-247-r0a.htm  [33 KB]  AR:92%  (1102 chars)
+  OK  CB-248-r0a.htm  [40 KB]  AR:85%  (1220 chars)
+  OK  CB-249-r0a.htm  [47 KB]  AR:97%  (1755 chars)
+  OK  CT-014-r0a.htm  [54 KB]  AR:99%  (2378 chars)
+  OK  DFR-026-r0a.htm  [144 KB]  AR:75%  (2357 chars)
+  OK  DMP-001-r0a.htm  [104 KB]  AR:68%  (2532 chars)
+  OK  DS-043-r0a.htm  [88 KB]  AR:70%  (1983 chars)
+  OK  DfR-014-r0a.htm  [43 KB]  AR:87%  (1374 chars)
+  OK  DfR-039-r0a.htm  [102 KB]  AR:76%  (2737 chars)
+  OK  DfR-043-r0a.htm  [91 KB]  AR:58%  (1929 chars)
+  OK  DsR-026-r0a.htm  [74 KB]  AR:75%  (2111 chars)
+  OK  EFR -019-r0a.htm  [59 KB]  AR:74%  (1683 chars)
+  OK  EFR-004-r0a.htm  [28 KB]  AR:32%  (58 chars)
+  OK  EFR-010-r0a.htm  [39 KB]  AR:69%  (1042 chars)
+  OK  EFR-011-r0a.htm  [42 KB]  AR:70%  (1237 chars)
+  OK  EFR-012-r0a.htm  [62 KB]  AR:69%  (1434 chars)
+  OK  EFR-013-r0a.htm  [44 KB]  AR:68%  (1398 chars)
+  OK  EFR-021-r0a.htm  [46 KB]  AR:86%  (1425 chars)
+  OK  FS-031-r0a.htm  [29 KB]  AR:64%  (70 chars)
+  OK  GVR-001-r0a.htm  [60 KB]  AR:81%  (1388 chars)
+  OK  Ins-003-r1a+ LITL06.htm  [112 KB]  AR:99%  (3678 chars)
+  OK  LOE-001-r0a.htm  [46 KB]  AR:68%  (1315 chars)
+  OK  MPIS TP 2001.htm  [25 KB]  AR:98%  (514 chars)
+  OK  OCR-012-r0a.htm  [59 KB]  AR:59%  (1526 chars)
+  OK  OCR-028-r0a.htm  [76 KB]  AR:68%  (1637 chars)
+  OK  OCR-029-r0a.htm  [70 KB]  AR:81%  (2211 chars)
+  OK  OCR-052-r0a.htm  [81 KB]  AR:78%  (2108 chars)
+  OK  OCR-060-r0a.htm  [92 KB]  AR:79%  (2180 chars)
+  OK  OCR-061-r0a.htm  [130 KB]  AR:83%  (2456 chars)
+  OK  OCR-062-r0a.htm  [57 KB]  AR:83%  (1553 chars)
+  OK  OFR-002-r0a.htm  [43 KB]  AR:72%  (1080 chars)
+  OK  OVR-002-r0a.htm  [48 KB]  AR:75%  (1167 chars)
+  OK  PT-009-r0a.htm  [54 KB]  AR:98%  (1898 chars)
+  OK  RPR-002-r0a.htm  [93 KB]  AR:73%  (2000 chars)
+  OK  RPR-004-r0a.htm  [113 KB]  AR:74%  (2311 chars)
+  OK  T-002-r0a.htm  [59 KB]  AR:99%  (2295 chars)
+  OK  T-003-r0a.htm  [314 KB]  AR:91%  (5949 chars)
+  OK  T-004-r1a.htm  [52 KB]  AR:99%  (1583 chars)
+  OK  T-005-r0a.htm  [232 KB]  AR:93%  (4782 chars)
+  OK  T-022-r0a.htm  [24 KB]  AR:94%  (2335 chars)
+  OK  T-024-r0a.htm  [16 KB]  AR:96%  (2663 chars)
+  OK  T-025-r0a.htm  [32 KB]  AR:90%  (2109 chars)
+  OK  T-026-r0a.htm  [14 KB]  AR:96%  (2161 chars)
+  OK  T-027-r0a.htm  [27 KB]  AR:91%  (1663 chars)
+  OK  T-041-r0a.htm  [31 KB]  AR:97%  (1012 chars)
+  OK  T-042-r0a.htm  [43 KB]  AR:99%  (2214 chars)
+  OK  T-043-r0a.htm  [76 KB]  AR:99%  (4614 chars)
+  OK  T-044-r0a.htm  [29 KB]  AR:98%  (1434 chars)
+  OK  T-045-r0a.htm  [46 KB]  AR:99%  (2566 chars)
+  OK  T-046-r0a.htm  [68 KB]  AR:99%  (4184 chars)
+  OK  TD-SS-001-r1a.htm  [20 KB]  AR:97%  (859 chars)
+  OK  TD-TL-002-r0a.htm  [29 KB]  AR:99%  (1730 chars)
+  OK  TD-TL-003-r0a.htm  [45 KB]  AR:99%  (1695 chars)
+  OK  TD-TL-04-r0a.htm  [43 KB]  AR:99%  (2370 chars)
+  OK  TL-000-r0a_032.htm  [49 KB]  AR:100%  (1804 chars)
+  OK  TL-001-r0a.htm  [94 KB]  AR:97%  (5500 chars)
+  OK  TL-005-r0a.htm  [69 KB]  AR:99%  (3161 chars)
+  OK  TL-006-r0a.htm  [73 KB]  AR:99%  (3694 chars)
+  OK  TL-011-r0a.htm  [34 KB]  AR:99%  (1522 chars)
+  OK  TL-014-r0a.htm  [81 KB]  AR:95%  (3839 chars)
+  OK  TL-015-r0a.htm  [90 KB]  AR:100%  (5019 chars)
+  OK  TL-032-01a.htm  [79 KB]  AR:99%  (3164 chars)
+  OK  TL-033-r0a.htm  [42 KB]  AR:98%  (1910 chars)
+  OK  TL-034-r0a.htm  [81 KB]  AR:100%  (4135 chars)
+  OK  TL-035-r0a.htm  [83 KB]  AR:99%  (4344 chars)
+  OK  TL-038-r0a.htm  [49 KB]  AR:98%  (2102 chars)
+  OK  TL-039-r0a.htm  [52 KB]  AR:97%  (2125 chars)
+  OK  TL-040-r0a.htm  [80 KB]  AR:97%  (2963 chars)
+  OK  TL-041-r0a.htm  [73 KB]  AR:97%  (3161 chars)
+  OK  TL-042-r0a.htm  [72 KB]  AR:100%  (4249 chars)
+  OK  TL-043-r0a.htm  [78 KB]  AR:100%  (4526 chars)
+  OK  TL-044-r0a.htm  [42 KB]  AR:99%  (2095 chars)
+  OK  TL-045-r0a.htm  [40 KB]  AR:98%  (1895 chars)
+  OK  TL-046-r0a.htm  [83 KB]  AR:100%  (3446 chars)
+  OK  TL-047-r0a.htm  [40 KB]  AR:99%  (1592 chars)
+  OK  TL-14-r0a.htm  [71 KB]  AR:84%  (3146 chars)
+  OK  TL-Option 02a.htm  [51 KB]  AR:99%  (2395 chars)
+  OK  UFR -002-r0a.htm  [43 KB]  AR:71%  (1093 chars)
+  OK  UVR-001-r0a.htm  [50 KB]  AR:69%  (1178 chars)
+  OK  UVR-002-r0a.htm  [103 KB]  AR:84%  (3319 chars)
+  OK  UVR-003-r0a.htm  [62 KB]  AR:78%  (1807 chars)
+  OK  UVR-012-r0a.htm  [67 KB]  AR:68%  (1577 chars)
+  OK  UVR-013-r0a.htm  [65 KB]  AR:68%  (1583 chars)
+  OK  b-016-r0a.htm  [45 KB]  AR:98%  (1719 chars)
+  OK  b-017-r0a.htm  [61 KB]  AR:98%  (2815 chars)
+  OK  b-018-r0a.htm  [41 KB]  AR:98%  (2015 chars)
+  OK  b-027-r0a.htm  [60 KB]  AR:100%  (2550 chars)
+  OK  cable-001-r0a.htm  [36 KB]  AR:99%  (1361 chars)
+  OK  cable-tmp1-r0a.htm  [60 KB]  AR:97%  (3005 chars)
+  OK  cable-tmp2-r0a.htm  [34 KB]  AR:98%  (1153 chars)
+  OK  cable-tmp3-r0a.htm  [33 KB]  AR:98%  (1227 chars)
+  OK  cb-023-r0a.htm  [29 KB]  AR:94%  (1081 chars)
+  OK  cb-039-r0a.htm  [113 KB]  AR:83%  (5058 chars)
+  OK  cb-052-r0a.htm  [38 KB]  AR:94%  (1708 chars)
+  OK  cb-086-r0a.htm  [32 KB]  AR:97%  (1068 chars)
+  OK  cb-086-r0a.htm  [27 KB]  AR:97%  (967 chars)
+  OK  cb-087-r0a.htm  [44 KB]  AR:89%  (1746 chars)
+  OK  cb-087-r0a.htm  [44 KB]  AR:89%  (1746 chars)
+  OK  cb-092-r0a.htm  [59 KB]  AR:95%  (2957 chars)
+  OK  cb-146-r0a.htm  [33 KB]  AR:98%  (1345 chars)
+  OK  cb-148-r0a.htm  [41 KB]  AR:93%  (1766 chars)
+  OK  cb-149-r0a.htm  [34 KB]  AR:95%  (1577 chars)
+  OK  cb-245-r0a.htm  [299 KB]  AR:63%  (4184 chars)
+  OK  cb-292-r0a.htm  [93 KB]  AR:98%  (3486 chars)
+  OK  cb-cmntSuezY8-r0a.htm  [39 KB]  AR:93%  (1601 chars)
+  OK  ch-010-r0a.htm  [33 KB]  AR:97%  (1053 chars)
+  OK  ch-012-r0a.htm  [39 KB]  AR:97%  (1477 chars)
+  OK  ch011-r0a.htm  [41 KB]  AR:96%  (1547 chars)
+  OK  dfR-012-r0a.htm  [160 KB]  AR:84%  (5691 chars)
+  OK  ds-010-r0a.htm  [35 KB]  AR:98%  (1701 chars)
+  OK  ds-035-r0a.htm  [30 KB]  AR:98%  (1334 chars)
+  OK  ds-036-r0a.htm  [35 KB]  AR:98%  (1856 chars)
+  OK  ds-037-r0a.htm  [37 KB]  AR:98%  (1671 chars)
+  OK  sample_pc.htm  [14 KB]  AR:95%  (534 chars)
+  OK  tc-001-r0a.htm  [88 KB]  AR:98%  (4544 chars)
+  OK  tc-005-r0a.htm  [132 KB]  AR:93%  (5231 chars)
+  OK  tl-036-r0a.htm  [80 KB]  AR:100%  (4491 chars)
+  OK  tl-037-r0a.htm  [87 KB]  AR:100%  (4827 chars)
+  OK  tl-40-r0a.htm  [57 KB]  AR:100%  (3371 chars)
+  OK  tl-41-r0a.htm  [63 KB]  AR:100%  (3697 chars)

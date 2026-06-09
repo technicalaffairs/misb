@@ -1,0 +1,324 @@
+
+============================================================
+FILE: Ar_ad_Trafo.htm | Size: 25 KB | AR chars: 0
+============================================================
+LINKS (13):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+  -> ../../../gen_docs/Fire%20control/FS-007-r0a.htm
+  -> ../../../gen_docs/Fire%20control/FS-007-r0a.htm
+  -> ad_ss_docs/T-001-r1a.htm
+  -> ad_ss_docs/T-001-r1a.htm
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+  L135: � 11/220/500 � 150 ���
+  L140: FS-007-r0a
+  L150: T-001-r1a
+  L167: T-002-r1a
+  L172: � 125 - I1-Y1
+  L174: T-003-r0a
+  L178: <span lang="AR-SA" style='font-family:"Traditional Arabic";
+  L179: mso-ascii-font-family:Arial;mso-hansi-font-family:Arial; font-weight:700'> 0 6 1999
+  L197: T-003-r1a
+  L201: <span lang="AR-SA" style='font-family:"Traditional Arabic";
+  L202: mso-ascii-font-family:Arial;mso-hansi-font-family:Arial; font-weight:700'> 0 6 1999
+  L215: T-004-r1a
+  L220: � 125 - (I1-Y1)
+  L222: T-005-r0a
+  L226: <span lang="AR-SA" style='font-family:"Traditional Arabic";
+  L227: mso-ascii-font-family:Arial;mso-hansi-font-family:Arial; font-weight:700'> 0 6 1999
+  L242: T-005-r1a
+  L254: T-032-r0a
+  L266: T-033-r0a
+  L280: T-041-r0a
+  L293: T-042-r0a
+  L306: T-043-r0a
+  L313: 66/11 25 ABB
+  L319: T-044-r0a
+
+============================================================
+FILE: Ar_ad_CBs.htm | Size: 42 KB | AR chars: 0
+============================================================
+LINKS (12):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+  -> ad_ss_docs/CB-157-r0a.htm
+  -> ad_ss_docs/cb-245-r0a.htm
+  -> ad_ss_docs/cb-245-r0a.htm
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+  L149: ������������
+  L155: H PL 300/31A2
+  L156: HPL 245/25B1
+  L167: CB-023-r0a
+  L190: CB-039-r0a
+  L208: 220 ���������������������
+  L212: HPL 300/31A2
+  L213: HPL 245/25B1 �
+  L225: CB-052-r0a
+  L234: � <span lang="AR-SA" style='mso-ansi-font-size:20.0pt;
+  L235: font-family:"Traditional Arabic";font-variant:normal;text-transform:uppercase'>
+  L237: <span style='mso-ansi-font-size:20.0pt;
+  L238: font-family:"Traditional Arabic";font-variant:normal;text-transform:uppercase'>
+  L241: <span dir="LTR" style='mso-bidi-font-size:14.0pt;
+  L242: font-family:"Traditional Arabic";mso-bidi-font-family:"Traditional Arabic";
+  L243: font-variant:normal;text-transform:uppercase;font-weight:700'>AEG <span dir="LTR" style="font-size:20.0pt;mso-bidi-font-size:22.0pt;font-variant:normal;
+  L244: text-transform:uppercase"> <span dir="LTR" style='font-family:"Traditional Arabic";
+  L245: mso-bidi-font-family:"Traditional Arabic";font-variant:normal;text-transform:
+  L246: uppercase;font-weight:700'> RMB 806
+  L252: CB-086-r0a
+  L270: � AR2-170
+  L279: CB-087-r0a
+  L297: CB-092-r0a
+  L321: CB-140-r0a
+
+============================================================
+FILE: Ar_ad_Batteries.htm | Size: 20 KB | AR chars: 0
+============================================================
+LINKS (13):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+  -> ad_ss_docs/b-018-r0a.htm
+  -> ad_ss_docs/b-018-r0a.htm
+  -> ad_ss_docs/ch011-r0a.htm
+  -> ad_ss_docs/ch011-r0a.htm
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+  L134: z 5KPM250P
+  L135: Czech Ferak �
+  L137: � ������������
+  L141: B-016-r0a
+  L151: z 5KPM250P
+  L152: Czech Ferak �
+  L154: � ������� �����
+  L159: B-017-r0a
+  L164: � 175 E5KPM250P FERAK- CZECHOSLOVAKIA - (I3-Y3)
+  L175: z 5KPM250P
+  L176: Czech Ferak �
+  L178: � �� ����������
+  L182: B-018-r0a
+  L189: B-027-r0a
+  L197: ����������������������������������������������������������������������
+  L203: B-031-r0a
+  L208: � c3PF-2-60 CHLORIDE - (I2-M1)
+  L210: Ch-010-r0a
+  L215: � C3PF-2-60 CHLORIDE - (I3-M3)
+  L217: Ch-011-r0a
+  L222: � C3PF-2-60 CHLORIDE - (I3-Y1)
+  L224: Ch-012-r0a
+
+============================================================
+FILE: Ar_ad_tap_changers.htm | Size: 12 KB | AR chars: 0
+============================================================
+LINKS (9):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+  L130: � 66 V MR - 5
+  L132: TC-001-r0a
+  L137: � TC-004-r0a
+  L139: TC-004-r0a
+  L144: � 220 CRNGS 230 - 2/533 - 521/40 - 16 Trafo - union - P1
+  L146: TC-005-r0a
+
+============================================================
+FILE: Ar_ad_CT_PT_LA.htm | Size: 12 KB | AR chars: 0
+============================================================
+LINKS (9):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+  L130: � 500 400 220 CTH 550,CTH 420, QDR-245 ALSTHOM - (I1 -Y1)
+  L132: CT-014-r0a
+  L137: � ( ) ( ) - - (I1 -Y1)
+  L139: PT-009-r0a
+
+============================================================
+FILE: Ar_ad_DS_ES.htm | Size: 19 KB | AR chars: 0
+============================================================
+LINKS (9):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+  L145: � � Elbrom
+  L146: turbo ���
+  L151: DS-010-r0a
+  L160: VIS 300 �
+  L161: AEG���� �������
+  L166: DS-030-r0a
+  L179: SGF 72.5 �
+  L182: ABB-ARAB ��� ������
+  L185: DS-035-r0a
+  L198: SGF 72.5 �
+  L201: ABB-ARAB ��� ������
+  L204: DS-036-r0a
+  L221: Bulgaria- EL B romTurbo ��� ������
+  L224: DS-037-r0a
+  L229: � 500 400 220 S2DA-L , S2DAT-L ALSTHOM - 1000 ( ) (I1 -Y1)
+  L231: DS-043-r0a
+
+============================================================
+FILE: Ar_ad_Busbars.htm | Size: 12 KB | AR chars: 0
+============================================================
+LINKS (9):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+  L141: BB-001-r0a
+  L154: BB-002-r0a
+  L165: Hipotronics ��������
+  L167: �����������
+  L171: BB-003-r0a
+
+============================================================
+FILE: Ar_ad_compressors.htm | Size: 10 KB | AR chars: 0
+============================================================
+LINKS (9):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+
+============================================================
+FILE: Ar_ad_condensers.htm | Size: 11 KB | AR chars: 0
+============================================================
+LINKS (9):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
+  L130: � 11 NOKIA - ( I1 - M6 )
+  L132: C-001-r0a
+
+============================================================
+FILE: Ar_Distrib_Board.htm | Size: 10 KB | AR chars: 0
+============================================================
+LINKS (9):
+  -> ../../Ar_Forms/A_form.htm
+  -> ../../Ar_Index.htm
+  -> ../../../about/docs%20status/status.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../Ar_about/Ar_about.htm
+  -> ../../../draf_%20docs/draf_doc.htm
+  -> ../Ar_appr_doc.htm
+  -> ../../Ar_whatsnew/Ar_whatsnew.htm
+  -> ../../../appr_docs/appr_doc.HTM
+TEXT PREVIEW (non-empty lines):
+  L10: div.Section1
+  L11: {page:Section1;}
+  L12: span.MsoHyperlink
+  L13: {color:blue;
+  L14: text-decoration:underline;
+  L15: text-underline:single;}
