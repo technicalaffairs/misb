@@ -239,7 +239,7 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 16px;
   text-decoration: none;
-  color: var(--text-main);
+  color: var(--accent-blue) !important;
   font-weight: 500;
   font-size: 0.95rem;
   text-align: center;
