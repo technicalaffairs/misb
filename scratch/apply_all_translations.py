@@ -3,7 +3,7 @@ import json
 from bs4 import BeautifulSoup
 
 cwd = r'c:\Users\sameh\OneDrive\المستندات\githup\mpis\misb'
-folder = os.path.join(cwd, r'gen_docs\app_gen\WDEPC\all_docs\Boilers')
+folder = os.path.join(cwd, r'arabic_web\Ar_app_gen\WDEPC\all_docs\Boilers')
 mapping_file = os.path.join(cwd, 'scratch', 'translated_all_mapping.json')
 
 with open(mapping_file, 'r', encoding='utf-8') as f:
