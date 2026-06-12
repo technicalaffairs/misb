@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <button id="closeChatBtn" class="chat-close">×</button>
             </div>
             <div id="chatBody" class="chat-body">
-                <div class="message bot-msg">مرحباً بك! أنا مهندس كهرباء قوى. كيف يمكنني مساعدتك اليوم؟</div>
+                <div class="message bot-msg">مرحبا بكم انا مساعدك الشخصي</div>
             </div>
             <div class="chat-footer">
                 <input type="text" id="chatInput" class="chat-input" placeholder="اكتب سؤالك هنا..." />
@@ -30,6 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const chatSendBtn = document.getElementById('chatSendBtn');
     const timerText = document.getElementById('timerText');
 
+    // --- State Restoration ---
+    const savedChat = sessionStorage.getItem('engChatHistory');
+    if (savedChat) {
+        chatBody.innerHTML = savedChat;
+        // Remove any orphaned loading messages from a previous page
+        const messages = chatBody.querySelectorAll('.message');
+        messages.forEach(msg => {
+            if (msg.textContent.includes('جاري التفكير...')) {
+                msg.remove();
+            }
+        });
+        chatBody.scrollTop = chatBody.scrollHeight;
+    }
+
+    const savedState = sessionStorage.getItem('engChatState');
+    if (savedState === 'open') {
+        chatWindow.classList.add('active');
+        chatBtn.style.display = 'none';
+    }
+
     // 3. Configuration
     const COOLDOWN_SECONDS = 15; // 15 seconds to prevent rate limit
     let isOnCooldown = false;
@@ -40,11 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
     chatBtn.addEventListener('click', () => {
         chatWindow.classList.add('active');
         chatBtn.style.display = 'none';
+        sessionStorage.setItem('engChatState', 'open');
     });
 
     closeChatBtn.addEventListener('click', () => {
         chatWindow.classList.remove('active');
         chatBtn.style.display = 'block';
+        sessionStorage.setItem('engChatState', 'closed');
     });
 
     // 5. Send Message Logic
@@ -75,7 +97,37 @@ document.addEventListener("DOMContentLoaded", function () {
             // Remove loading and add real response
             removeMessage(loadingId);
             if (data.response) {
-                addMessage(data.response, 'bot-msg');
+                let botReply = data.response;
+                
+                // فحص إذا كان الرد يحتوي على أمر فتح صفحة
+                const pageMatch = botReply.match(/\[OPEN_PAGE:\s*(.+?)\]/i);
+                let targetPage = null;
+                
+                if (pageMatch && pageMatch[1]) {
+                    targetPage = pageMatch[1].trim();
+                    // إزالة الكود من النص المعروض للمستخدم
+                    botReply = botReply.replace(/\[OPEN_PAGE:\s*(.+?)\]/gi, '').trim();
+                }
+
+                addMessage(botReply, 'bot-msg');
+                
+                // تنفيذ التوجيه إذا لزم الأمر
+                if (targetPage) {
+                    setTimeout(() => {
+                        // حساب الرابط الأساسي للموقع (بناءً على مجلد arabic_web)
+                        const currentUrl = window.location.href;
+                        const baseStr = "arabic_web/";
+                        const idx = currentUrl.indexOf(baseStr);
+                        if (idx !== -1) {
+                            const rootUrl = currentUrl.substring(0, idx + baseStr.length);
+                            window.location.href = rootUrl + targetPage;
+                        } else {
+                            // كحل بديل إذا لم نتمكن من العثور على arabic_web، نعتمد مسار نسبي بسيط
+                            console.warn("Could not find arabic_web in URL.");
+                        }
+                    }, 3000); // الانتظار 3 ثوانٍ ليقرأ المستخدم الرد
+                }
+
             } else {
                 addMessage('عذراً، حدث خطأ. ' + (data.error || ''), 'bot-msg');
             }
@@ -94,18 +146,26 @@ document.addEventListener("DOMContentLoaded", function () {
         msgDiv.id = id;
         
         // Simple markdown parsing for bold text if gemini returns markdown
-        let formattedText = text.replace(/\\*\\*(.*?)\\*\\*/g, '<strong>$1</strong>');
-        formattedText = formattedText.replace(/\\n/g, '<br>');
+        let formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        formattedText = formattedText.replace(/\n/g, '<br>');
         
         msgDiv.innerHTML = formattedText;
         chatBody.appendChild(msgDiv);
         chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll
+        
+        // حفظ المحادثة
+        sessionStorage.setItem('engChatHistory', chatBody.innerHTML);
+        
         return id;
     }
 
     function removeMessage(id) {
         const msgDiv = document.getElementById(id);
-        if (msgDiv) msgDiv.remove();
+        if (msgDiv) {
+            msgDiv.remove();
+            // تحديث المحادثة المحفوظة
+            sessionStorage.setItem('engChatHistory', chatBody.innerHTML);
+        }
     }
 
     // 7. Cooldown Timer Logic
