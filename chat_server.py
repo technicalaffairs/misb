@@ -3,7 +3,7 @@ import json
 import re
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import google.generativeai as genai
+import cohere
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -11,9 +11,10 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)  # Allow requests from the HTML frontend
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+COHERE_API_KEY = os.environ.get("COHERE_API_KEY", "vlCNUnrJUL7ooiOHHacR6ieQB8nTqXXotfNtGx7a2ug6Js")
 
-genai.configure(api_key=GEMINI_API_KEY)
+# Initialize Cohere client
+co = cohere.Client(api_key=COHERE_API_KEY)
 
 # Load search index
 print("Loading search index...")
@@ -28,8 +29,6 @@ except Exception as e:
 def search_site(query: str) -> str:
     """
     يبحث في مستندات وصفحات موقع محطة المحولات عن الكلمات المفتاحية المتعلقة بسؤال المستخدم.
-    استخدم هذه الأداة دائماً للبحث عن المعلومات للإجابة على الأسئلة التقنية.
-    ترجع الدالة أفضل 3 صفحات مطابقة تحتوي على المعلومات مع روابطها.
     """
     if not SEARCH_INDEX:
         return "عذراً، الفهرس غير متاح حالياً."
@@ -77,27 +76,19 @@ def search_site(query: str) -> str:
     return result_text
 
 
-# إعداد شخصية المهندس
 system_instruction = """
 أنت مهندس كهرباء قوى محترف وخبير تعمل في موقع محطة محولات، وهندسة الخطوط، والوقاية، والصيانة.
 إذا سألك المستخدم من أنت، أجب بأنك "مساعده الشخصي وتفكر كمهندس كهرباء محترف".
-أنت دائم التعلم من مستندات الموقع الموجودة لديك.
 
 تعليمات هامة جداً:
-1. عند طرح أي سؤال فني، يجب عليك **دائماً** استخدام أداة البحث `search_site` للبحث في مستندات الموقع قبل الإجابة.
+1. ستتلقى أسئلة المستخدم بالإضافة إلى "نتائج بحث" مستخرجة من مستندات الموقع.
 2. اقرأ نتائج البحث وصغ منها إجابة علمية، دقيقة، ومبسطة باللغة العربية.
 3. **يجب** أن ترفق في نهاية إجابتك كود فتح الصفحة التي اقتبست منها المعلومة بالضبط بالصيغة التالية:
 [OPEN_PAGE: مسار_الملف]
 (حيث مسار_الملف هو المسار الموجود في نتائج أداة البحث مثل arabic_web/Ar_appr_docs/...).
 4. لا تجب على أسئلة خارج التخصصات الهندسية.
-5. إذا لم تجد الإجابة في البحث، يمكنك الإجابة من خبرتك الهندسية، ولكن وضح للمستخدم أن المعلومة ليست من مستندات الموقع المباشرة.
+5. إذا لم تجد الإجابة في البحث المرفق، يمكنك الإجابة من خبرتك الهندسية، ولكن وضح للمستخدم أن المعلومة عامة وليست من مستندات الموقع.
 """
-
-model = genai.GenerativeModel(
-    model_name="gemini-flash-latest",
-    system_instruction=system_instruction,
-    tools=[search_site]
-)
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
@@ -108,17 +99,26 @@ def chat():
         return jsonify({"error": "Message is required"}), 400
 
     try:
-        # إرسال الرسالة لنموذج جيميناي
-        # Initialize a new chat session for function calling to work nicely
-        chat_session = model.start_chat(enable_automatic_function_calling=True)
-        response = chat_session.send_message(user_message)
+        # First, search local documents
+        search_results = search_site(user_message)
         
-        return jsonify({"response": response.text})
+        # Build prompt
+        prompt = f"سؤال المستخدم: {user_message}\n\nإليك نتائج البحث من المستندات:\n{search_results}\n\nالرجاء صياغة الإجابة بناءً على هذه النتائج، ولا تنس إرفاق الكود [OPEN_PAGE: المسار] في النهاية."
+        
+        # Call Cohere
+        response = co.chat(
+            model="command-r", # 'command-r' is fast and good for RAG in Arabic
+            message=prompt,
+            preamble=system_instruction
+        )
+        
+        answer = response.text
+            
+        return jsonify({"response": answer})
     except Exception as e:
         print(f"Error: {e}")
         return jsonify({"error": "حدث خطأ أثناء التواصل مع الذكاء الاصطناعي."}), 500
 
 if __name__ == '__main__':
-    print("بدء تشغيل خادم المحادثة الذكي على المنفذ 5000...")
-    print("تذكر إضافة مفتاح GEMINI_API_KEY في الكود أو كمتغير بيئة.")
+    print("بدء تشغيل خادم المحادثة الذكي (Cohere) على المنفذ 5000...")
     app.run(debug=True, port=5000)
