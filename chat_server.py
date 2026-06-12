@@ -11,7 +11,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)  # Allow requests from the HTML frontend
 
-COHERE_API_KEY = os.environ.get("COHERE_API_KEY", "vlCNUnrJUL7ooiOHHacR6ieQB8nTqXXotfNtGx7a2ug6Js")
+COHERE_API_KEY = os.environ.get("COHERE_API_KEY", "cohere_aqAQLdsXOA9yRwO2dnbec6vhaoF74JRRggDDqrnW3Nd2Nv")
 
 # Initialize Cohere client
 co = cohere.Client(api_key=COHERE_API_KEY)
@@ -107,7 +107,7 @@ def chat():
         
         # Call Cohere
         response = co.chat(
-            model="command-r", # 'command-r' is fast and good for RAG in Arabic
+            model="command-r-08-2024", 
             message=prompt,
             preamble=system_instruction
         )
