@@ -3,18 +3,18 @@
 document.addEventListener("DOMContentLoaded", function () {
     // 1. Create HTML structure dynamically
     const chatHTML = `
-        <button id="chatBtn" class="chat-btn">💬</button>
+        <button id="chatBtn" class="chat-btn">🔍</button>
         <div id="chatWindow" class="chat-window" dir="rtl">
             <div class="chat-header">
-                <span>مساعدك الهندسي الذكي</span>
+                <span>محرك البحث الذكي للمستندات</span>
                 <button id="closeChatBtn" class="chat-close">×</button>
             </div>
             <div id="chatBody" class="chat-body">
-                <div class="message bot-msg">مرحبا بكم انا مساعدك الشخصي</div>
+                <div class="message bot-msg">مرحبا بك، اكتب اسم المعدة أو الإجراء الذي تبحث عنه وسأجد المستند فوراً!</div>
             </div>
             <div class="chat-footer">
-                <input type="text" id="chatInput" class="chat-input" placeholder="اكتب سؤالك هنا..." />
-                <button id="chatSendBtn" class="chat-send-btn">إرسال <span id="timerText" class="timer-text"></span></button>
+                <input type="text" id="chatInput" class="chat-input" placeholder="ابحث هنا (مثال: عينة الزيت)..." />
+                <button id="chatSendBtn" class="chat-send-btn">بحث</button>
             </div>
         </div>
     `;
@@ -28,16 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const chatBody = document.getElementById('chatBody');
     const chatInput = document.getElementById('chatInput');
     const chatSendBtn = document.getElementById('chatSendBtn');
-    const timerText = document.getElementById('timerText');
 
     // --- State Restoration ---
     const savedChat = sessionStorage.getItem('engChatHistory');
     if (savedChat) {
         chatBody.innerHTML = savedChat;
-        // Remove any orphaned loading messages from a previous page
+        // Clean orphaned loading
         const messages = chatBody.querySelectorAll('.message');
         messages.forEach(msg => {
-            if (msg.textContent.includes('جاري التفكير...')) {
+            if (msg.textContent.includes('جاري البحث...')) {
                 msg.remove();
             }
         });
@@ -50,17 +49,35 @@ document.addEventListener("DOMContentLoaded", function () {
         chatBtn.style.display = 'none';
     }
 
-    // 3. Configuration
-    const COOLDOWN_SECONDS = 15; // 15 seconds to prevent rate limit
-    let isOnCooldown = false;
-    // Update this URL if your Python server is hosted elsewhere
-    const API_URL = "http://localhost:5000/api/chat";
+    // --- Global Search Index ---
+    let searchIndex = null;
+    let isFetching = false;
+
+    // Helper: Determine root URL dynamically
+    function getRootUrl() {
+        const currentUrl = window.location.href;
+        const baseStr = "arabic_web/";
+        const idx = currentUrl.indexOf(baseStr);
+        if (idx !== -1) {
+            return currentUrl.substring(0, idx); // Returns URL up to the root (before arabic_web/)
+        }
+        // Fallback: try to guess based on standard paths
+        return window.location.origin + window.location.pathname.split("/arabic_web/")[0] + "/";
+    }
+
+    const rootUrl = getRootUrl();
+    const indexUrl = rootUrl + "search_index.json";
 
     // 4. Toggle Window
     chatBtn.addEventListener('click', () => {
         chatWindow.classList.add('active');
         chatBtn.style.display = 'none';
         sessionStorage.setItem('engChatState', 'open');
+        
+        // Pre-fetch index if not loaded
+        if (!searchIndex && !isFetching) {
+            fetchSearchIndex();
+        }
     });
 
     closeChatBtn.addEventListener('click', () => {
@@ -69,72 +86,103 @@ document.addEventListener("DOMContentLoaded", function () {
         sessionStorage.setItem('engChatState', 'closed');
     });
 
+    async function fetchSearchIndex() {
+        isFetching = true;
+        try {
+            const response = await fetch(indexUrl);
+            if (!response.ok) throw new Error("Network response was not ok");
+            searchIndex = await response.json();
+            console.log("Search index loaded successfully: " + searchIndex.length + " documents.");
+        } catch (error) {
+            console.error("Failed to fetch search index:", error);
+        } finally {
+            isFetching = false;
+        }
+    }
+
+    // Simple Scoring Algorithm
+    function calculateScore(item, keywords) {
+        let score = 0;
+        let content = (item.content || "").toLowerCase();
+        let title = (item.title || "").toLowerCase();
+        
+        for (let kw of keywords) {
+            if (title.includes(kw)) score += 10;
+            if (content.includes(kw)) score += 1;
+        }
+        return score;
+    }
+
     // 5. Send Message Logic
     async function sendMessage() {
         const text = chatInput.value.trim();
-        if (!text || isOnCooldown) return;
+        if (!text) return;
 
-        // Add User Message to UI
         addMessage(text, 'user-msg');
         chatInput.value = '';
 
-        // Start Cooldown Timer
-        startCooldown();
+        const loadingId = addMessage('جاري البحث...', 'bot-msg');
 
-        // Add Loading Bot Message
-        const loadingId = addMessage('جاري التفكير...', 'bot-msg');
-
-        try {
-            // Send to Backend
-            const response = await fetch(API_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: text })
-            });
-
-            const data = await response.json();
-            
-            // Remove loading and add real response
-            removeMessage(loadingId);
-            if (data.response) {
-                let botReply = data.response;
-                
-                // فحص إذا كان الرد يحتوي على أمر فتح صفحة
-                const pageMatch = botReply.match(/\[OPEN_PAGE:\s*(.+?)\]/i);
-                let targetPage = null;
-                
-                if (pageMatch && pageMatch[1]) {
-                    targetPage = pageMatch[1].trim();
-                    // إزالة الكود من النص المعروض للمستخدم
-                    botReply = botReply.replace(/\[OPEN_PAGE:\s*(.+?)\]/gi, '').trim();
-                }
-
-                addMessage(botReply, 'bot-msg');
-                
-                // تنفيذ التوجيه إذا لزم الأمر
-                if (targetPage) {
-                    setTimeout(() => {
-                        // حساب الرابط الأساسي للموقع (بناءً على مجلد arabic_web)
-                        const currentUrl = window.location.href;
-                        const baseStr = "arabic_web/";
-                        const idx = currentUrl.indexOf(baseStr);
-                        if (idx !== -1) {
-                            const rootUrl = currentUrl.substring(0, idx + baseStr.length);
-                            window.location.href = rootUrl + targetPage;
-                        } else {
-                            // كحل بديل إذا لم نتمكن من العثور على arabic_web، نعتمد مسار نسبي بسيط
-                            console.warn("Could not find arabic_web in URL.");
-                        }
-                    }, 3000); // الانتظار 3 ثوانٍ ليقرأ المستخدم الرد
-                }
-
-            } else {
-                addMessage('عذراً، حدث خطأ. ' + (data.error || ''), 'bot-msg');
+        // Ensure index is loaded
+        if (!searchIndex) {
+            if (!isFetching) fetchSearchIndex();
+            // Wait until it's loaded
+            while (isFetching) {
+                await new Promise(resolve => setTimeout(resolve, 100));
             }
-        } catch (error) {
-            removeMessage(loadingId);
-            addMessage('تعذر الاتصال بالخادم. تأكد من تشغيل chat_server.py.', 'bot-msg');
-            console.error('Chat Error:', error);
+        }
+
+        removeMessage(loadingId);
+
+        if (!searchIndex) {
+            addMessage('عذراً، لم أتمكن من تحميل قاعدة بيانات المستندات.', 'bot-msg');
+            return;
+        }
+
+        // Extract meaningful keywords
+        let keywords = text.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+        
+        // If nothing matches length filter, use the exact word
+        if (keywords.length === 0) keywords.push(text.toLowerCase());
+
+        let results = searchIndex.map(item => {
+            return {
+                item: item,
+                score: calculateScore(item, keywords)
+            };
+        }).filter(res => res.score > 0);
+
+        results.sort((a, b) => b.score - a.score);
+
+        // Fallback for exact phrase matching if no scores hit
+        if (results.length === 0) {
+            const exactSearchStr = text.toLowerCase();
+            results = searchIndex.filter(item => 
+                (item.title && item.title.toLowerCase().includes(exactSearchStr)) ||
+                (item.content && item.content.toLowerCase().includes(exactSearchStr))
+            ).map(item => ({ item: item, score: 1 }));
+        }
+
+        if (results.length > 0) {
+            const topResults = results.slice(0, 5); // Top 5 results
+            let htmlReply = '<strong>لقد وجدت المستندات التالية التي قد تفيدك:</strong><br><ul style="margin-top: 10px; padding-right: 20px;">';
+            
+            topResults.forEach(res => {
+                let linkHref = rootUrl + res.item.path;
+                let title = res.item.title && res.item.title.trim() !== "" ? res.item.title : "مستند بدون عنوان";
+                
+                // If title is just a meaningless code or empty, try to derive from path
+                if (title === "مستند بدون عنوان" || title === "") {
+                    title = res.item.path.split('/').pop().replace('.htm', '').replace('.html', '');
+                }
+
+                htmlReply += `<li style="margin-bottom: 8px;"><a href="${linkHref}" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold; border-bottom: 1px dashed #007bff;">${title}</a></li>`;
+            });
+            htmlReply += '</ul>';
+            
+            addMessage(htmlReply, 'bot-msg');
+        } else {
+            addMessage('عذراً، لم أتمكن من إيجاد أي مستندات تطابق بحثك. جرب استخدام كلمات أكثر عمومية.', 'bot-msg');
         }
     }
 
@@ -145,17 +193,12 @@ document.addEventListener("DOMContentLoaded", function () {
         msgDiv.className = `message ${className}`;
         msgDiv.id = id;
         
-        // Simple markdown parsing for bold text if gemini returns markdown
-        let formattedText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-        formattedText = formattedText.replace(/\n/g, '<br>');
+        msgDiv.innerHTML = text; 
         
-        msgDiv.innerHTML = formattedText;
         chatBody.appendChild(msgDiv);
         chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll
         
-        // حفظ المحادثة
         sessionStorage.setItem('engChatHistory', chatBody.innerHTML);
-        
         return id;
     }
 
@@ -163,35 +206,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const msgDiv = document.getElementById(id);
         if (msgDiv) {
             msgDiv.remove();
-            // تحديث المحادثة المحفوظة
             sessionStorage.setItem('engChatHistory', chatBody.innerHTML);
         }
-    }
-
-    // 7. Cooldown Timer Logic
-    function startCooldown() {
-        isOnCooldown = true;
-        chatSendBtn.disabled = true;
-        chatInput.disabled = true;
-        chatInput.placeholder = "انتظر قليلاً...";
-        
-        let timeLeft = COOLDOWN_SECONDS;
-        timerText.textContent = `(${timeLeft})`;
-
-        const timer = setInterval(() => {
-            timeLeft--;
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                isOnCooldown = false;
-                chatSendBtn.disabled = false;
-                chatInput.disabled = false;
-                chatInput.placeholder = "اكتب سؤالك هنا...";
-                timerText.textContent = '';
-                chatInput.focus();
-            } else {
-                timerText.textContent = `(${timeLeft})`;
-            }
-        }, 1000);
     }
 
     // 8. Event Listeners
