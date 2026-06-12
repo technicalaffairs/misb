@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const rootUrl = getRootUrl();
-    const indexUrl = rootUrl + "search_index.json";
+    const indexScriptUrl = rootUrl + "search_index.js";
 
     // 4. Toggle Window
     chatBtn.addEventListener('click', () => {
@@ -86,16 +86,26 @@ document.addEventListener("DOMContentLoaded", function () {
         sessionStorage.setItem('engChatState', 'closed');
     });
 
-    async function fetchSearchIndex() {
+    function fetchSearchIndex() {
         isFetching = true;
         try {
-            const response = await fetch(indexUrl);
-            if (!response.ok) throw new Error("Network response was not ok");
-            searchIndex = await response.json();
-            console.log("Search index loaded successfully: " + searchIndex.length + " documents.");
+            const script = document.createElement('script');
+            script.src = indexScriptUrl;
+            
+            script.onload = () => {
+                searchIndex = window.SEARCH_INDEX;
+                console.log("Search index loaded successfully via script tag: " + searchIndex.length + " documents.");
+                isFetching = false;
+            };
+            
+            script.onerror = () => {
+                console.error("Failed to load search index script.");
+                isFetching = false;
+            };
+            
+            document.head.appendChild(script);
         } catch (error) {
-            console.error("Failed to fetch search index:", error);
-        } finally {
+            console.error("Failed to inject search index script:", error);
             isFetching = false;
         }
     }
