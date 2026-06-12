@@ -121,8 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
             pagesToOpen.push(match[1]);
         }
 
-        // Remove the tags from the text shown to the user
-        formattedText = formattedText.replace(openPageRegex, '').trim();
+        const rootUrl = getRootUrl();
+
+        // Replace the tags with clickable links
+        formattedText = formattedText.replace(openPageRegex, function(fullMatch, path) {
+            const fullUrl = rootUrl + path.trim();
+            const fileName = path.split('/').pop().replace('.htm', '').replace('.html', '');
+            return `<br><a href="${fullUrl}" target="_blank" style="display: inline-block; margin-top: 5px; color: #0056b3; text-decoration: underline; font-weight: bold;">📄 افتح مستند: ${fileName}</a>`;
+        }).trim();
 
         // Convert markdown links, bold, etc., to basic HTML
         formattedText = formattedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
@@ -131,15 +137,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         addMessage(formattedText, 'bot-msg');
 
-        // Dynamically open pages
+        // Dynamically open only the first page to avoid popup blockers
         if (pagesToOpen.length > 0) {
-            const rootUrl = getRootUrl();
-            pagesToOpen.forEach(pagePath => {
-                const fullUrl = rootUrl + pagePath.trim();
-                setTimeout(() => {
-                    window.open(fullUrl, '_blank');
-                }, 500); // Small delay
-            });
+            const firstPageUrl = rootUrl + pagesToOpen[0].trim();
+            setTimeout(() => {
+                window.open(firstPageUrl, '_blank');
+            }, 500);
         }
     }
 
