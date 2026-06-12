@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+
+<html dir="rtl" lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>نظام معلومات إجراءات الصيانة - MPIS</title>
-  <link rel="stylesheet" href="../style.css">
-  <!-- FontAwesome for modern icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>نظام معلومات إجراءات الصيانة - MPIS</title>
+<link href="../style.css" rel="stylesheet"/>
+<!-- FontAwesome for modern icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
     @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
 
     body {
@@ -46,326 +47,304 @@
   </style>
 </head>
 <body class="homepage-body">
-  <div class="app-container">
-    
-    <!-- Top Bar with Contact Info and Language Toggle -->
-    <div class="top-bar">
-      <a href="../index.htm" class="lang-switch">
-        <i class="fa-solid fa-globe"></i>
-        <span>English Version</span>
-      </a>
-    </div>
-
-    <!-- Header Section -->
-    <header class="header-section">
-      <div class="header-text-left">
-        <span class="org-hierarchy">وزارة الكهرباء والطاقة المتجددة</span>
-        <h1 class="org-name">الشركة القابضة لكهرباء مصر</h1>
-        <span class="org-subname">المنطقة الجنوبية - منطقة كهرباء مصر الوسطى - إدارة الشئون الفنية</span>
-      </div>
-
-      <div class="logo-container">
-        <div class="logo-glow-wrapper">
-          <img src="../images/eetc_logo.jpg" alt="EETC Logo" class="main-logo">
-        </div>
-        
-      </div>
-
-      <div class="header-text-right">
-        <span class="org-hierarchy">قطاع تطوير نظم إجراءات الصيانة ومراقبة الجودة</span>
-        <h2 class="org-name">نظام معلومات إجراءات الصيانة</h2>
-        <span class="org-subname">الإدارة العامة لتطوير نظم إجراءات الصيانة</span>
-      </div>
-    </header>
-
-
-    <!-- Navigation Menu Buttons -->
-    <nav class="main-nav">
-      <a href="Ar_whatsnew/Ar_whatsnew.htm" class="nav-btn">
-        <i class="fa-solid fa-bullhorn"></i>
-        <span>ما هو الجديد</span>
-      </a>
-      <a href="Ar_about/docs%20status/Ar_status.htm" class="nav-btn">
-        <i class="fa-solid fa-chart-line"></i>
-        <span>موقف المستندات</span>
-      </a>
-      <a href="Ar_forms/A_form.htm" class="nav-btn">
-        <i class="fa-solid fa-file-invoice"></i>
-        <span>النماذج</span>
-      </a>
-      <a href="Ar_about/Ar_about.htm" class="nav-btn">
-        <i class="fa-solid fa-circle-info"></i>
-        <span>ما هو الـ MPIS</span>
-      </a>
-      <a href="Ar_admin_inst/Ar_admin_inst.htm" class="nav-btn">
-        <i class="fa-solid fa-sliders"></i>
-        <span>التعليمات الإدارية</span>
-      </a>
-      <a href="Ar_draf_docs/Ar_draf_doc.htm" class="nav-btn">
-        <i class="fa-solid fa-file-signature"></i>
-        <span>مسودة المستندات</span>
-      </a>
-      <a href="Ar_Coordinators/Ar_MPIS_Coord_main%20Page.htm" class="nav-btn">
-        <i class="fa-solid fa-users-gear"></i>
-        <span>المنسقون</span>
-      </a>
-      <a href="Ar_tech_resource/Ar_tech_resource.htm" class="nav-btn">
-        <i class="fa-solid fa-folder-open"></i>
-        <span>قاعدة البيانات</span>
-      </a>
-    </nav>
-
-    <!-- Alert / Ticker Banner -->
-    <div class="ticker-banner">
-      <span class="ticker-label">تنبيه</span>
-      <div class="ticker-content">
-        <a href="Ar_whatsnew/Ar_whatsnew.htm">برجاء مراجعة "ما هو الجديد"! تم رفع أدلة الصيانة الجديدة وإرشادات الجودة المعتمدة.</a>
-      </div>
-    </div>
-
-    <!-- Main Sector Cards -->
-    <section class="sectors-container">
-      <!-- Production -->
-      <a href="Ar_gen_docs/Ar_gen_Co.s.htm" class="sector-card">
-        <div class="sector-icon"><i class="fa-solid fa-industry"></i></div>
-        <h3 class="sector-title">شركات الإنتاج</h3>
-        <p class="sector-desc">الوصول لمستندات شركات الإنتاج وإرشادات صيانة الغلايات والتوربينات والمولدات.</p>
-      </a>
-
-      <!-- EETC (Highlight/Center) -->
-      <a href="Ar_distr+Trans/Ar_Transm.%20Co._Page.html" class="sector-card highlight">
-        <div class="sector-icon"><i class="fa-solid fa-tower-cell"></i></div>
-        <h3 class="sector-title">الشركة المصرية لنقل الكهرباء</h3>
-        <p class="sector-desc">مواصفات محطات المحولات، معايير الشبكة الموحدة، وخطوط النقل بمختلف المناطق.</p>
-      </a>
-
-      <!-- Distribution -->
-      <a href="Ar_distr+Trans/Ar_Distrib.Co._Page.html" class="sector-card">
-        <div class="sector-icon"><i class="fa-solid fa-network-wired"></i></div>
-        <h3 class="sector-title">شركات التوزيع</h3>
-        <p class="sector-desc">بروتوكولات شركات التوزيع، معايير اتزان الأحمال ومراقبة جودة التغذية الكهربائية.</p>
-      </a>
-    </section>
-
-    <!-- Search and Filter Bar -->
-    <div class="search-filter-section">
-      <div class="search-wrapper">
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-        <input type="text" id="search-input" class="search-input" placeholder="ابحث عن المستندات الفنية والأنظمة الفرعية..." onkeyup="filterLinks()">
-      </div>
-    </div>
-
-    <!-- Technical Categories Grid -->
-    <main class="categories-section">
-
-      <!-- Substations & Equipment -->
-      <div class="category-group" id="substations-group">
-        <h3 class="category-group-header">
-          <i class="fa-solid fa-bolt"></i>
-          <a href="Ar_appr_docs/Ar_ad_subst/Ar_ad_subst.htm" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 8px;">
-            <span>محطات المحولات والمعدات</span>
-            <i class="fa-solid fa-chevron-left" style="font-size: 0.8em; opacity: 0.7;"></i>
-          </a>
-        </h3>
-        <div class="links-grid">
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_CBs.htm" class="link-card">
-            <i class="fa-solid fa-circle-dot"></i>
-            <span>القواطع الكهربائية</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_Trafo.htm" class="link-card">
-            <i class="fa-solid fa-circle-nodes"></i>
-            <span>المحولات الكهربائية</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_tap_changers.htm" class="link-card">
-            <i class="fa-solid fa-code-merge"></i>
-            <span>مغيرات الجهد</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_DS_ES.htm" class="link-card">
-            <i class="fa-solid fa-toggle-on"></i>
-            <span>السكاكين والأرضي (DS+ES Switches)</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_CT_PT_LA.htm" class="link-card">
-            <i class="fa-solid fa-scale-balanced"></i>
-            <span>محولات التيار والجهد ومانعات الصواعق</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_Batteries.htm" class="link-card">
-            <i class="fa-solid fa-battery-three-quarters"></i>
-            <span>البطاريات والشواحن وموانع الانقطاع</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_Distrib_Board.htm" class="link-card">
-            <i class="fa-solid fa-table-cells"></i>
-            <span>لوحات التوزيع</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_condensers.htm" class="link-card">
-            <i class="fa-solid fa-capsules"></i>
-            <span>المكثفات الكهربائية</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_Busbars.htm" class="link-card">
-            <i class="fa-solid fa-grip-lines"></i>
-            <span>قضبان التوصيل</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_compressors.htm" class="link-card">
-            <i class="fa-solid fa-gauge-high"></i>
-            <span>الضواغط</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Power Generation Systems -->
-      <div class="category-group" id="generation-group">
-        <h3 class="category-group-header">
-          <i class="fa-solid fa-gears"></i>
-          <span>أنظمة توليد الطاقة</span>
-        </h3>
-        <div class="links-grid">
-          <a href="Ar_gen_docs/Ar_Gas%20Turbines_docs%20Page.htm" class="link-card">
-            <i class="fa-solid fa-wind"></i>
-            <span>التوربينات الغازية والدورة المركبة</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Boilers_docs%20Page.htm" class="link-card">
-            <i class="fa-solid fa-fire"></i>
-            <span>الغلايات</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Turbines.htm" class="link-card">
-            <i class="fa-solid fa-rotate"></i>
-            <span>التوربينات</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Pumps_docs%20Page.htm" class="link-card">
-            <i class="fa-solid fa-faucet-drip"></i>
-            <span>الطلمبات</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Fans_docs%20Page.htm" class="link-card">
-            <i class="fa-solid fa-fan"></i>
-            <span>المراوح</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Governers.htm" class="link-card">
-            <i class="fa-solid fa-compass-drafting"></i>
-            <span>منظمات السرعة</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Air%20Heaters.htm" class="link-card">
-            <i class="fa-solid fa-temperature-arrow-up"></i>
-            <span>مسخنات الهواء</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Thermal%20aux.htm" class="link-card">
-            <i class="fa-solid fa-sun"></i>
-            <span>المساعدات الحرارية</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Generators%20Page.htm" class="link-card">
-            <i class="fa-solid fa-lightbulb"></i>
-            <span>المولدات</span>
-          </a>
-          <a href="Ar_appr_docs/ad_subst/Ar_ad_dsl.htm" class="link-card">
-            <i class="fa-solid fa-oil-can"></i>
-            <span>محركات الديزل</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Valves.htm" class="link-card">
-            <i class="fa-solid fa-sliders"></i>
-            <span>المحابس</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Motors%20Page.htm" class="link-card">
-            <i class="fa-solid fa-circle-nodes"></i>
-            <span>المحركات الكهربائية</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Filters_docs%20Page.htm" class="link-card">
-            <i class="fa-solid fa-filter"></i>
-            <span>الفلاتر</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Hydraulic%20aux.htm" class="link-card">
-            <i class="fa-solid fa-water"></i>
-            <span>المساعدات الهيدروليكية</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Transmission, Control & Protection -->
-      <div class="category-group" id="transmission-group">
-        <h3 class="category-group-header">
-          <i class="fa-solid fa-shield-halved"></i>
-          <span>نقل الطاقة، التحكم والوقاية</span>
-        </h3>
-        <div class="links-grid">
-          <a href="Ar_appr_docs/Ar_ad_pc/Ar_ad_pc.htm" class="link-card">
-            <i class="fa-solid fa-user-shield"></i>
-            <span>أجهزة الوقاية</span>
-          </a>
-          <a href="Ar_appr_docs/ad_com/Ar_ad_com.htm" class="link-card">
-            <i class="fa-solid fa-tower-broadcast"></i>
-            <span>أجهزة الاتصالات</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Instruments_gen_docs%20Page.htm" class="link-card">
-            <i class="fa-solid fa-gauge"></i>
-            <span>أجهزة القياس والتحكم</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_trans/Ar_ad_trans.htm" class="link-card">
-            <i class="fa-solid fa-route"></i>
-            <span>الخطوط الهوائية</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_ad_Fire%20control.htm" class="link-card">
-            <i class="fa-solid fa-fire-extinguisher"></i>
-            <span>أجهزة ونظم الإطفاء</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_ad_aux.htm" class="link-card">
-            <i class="fa-solid fa-shield-virus"></i>
-            <span>الحماية الكاثودية</span>
-          </a>
-          <a href="Ar_appr_docs/ad_cables/Ar_ad_cables.htm" class="link-card">
-            <i class="fa-solid fa-square-rss"></i>
-            <span>الكابلات الأرضية والبحرية</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Management, Standards & Directives -->
-      <div class="category-group" id="management-group">
-        <h3 class="category-group-header">
-          <i class="fa-solid fa-folder-tree"></i>
-          <span>الإدارة، المعايير والتوجيهات الفنية</span>
-        </h3>
-        <div class="links-grid">
-          <a href="Ar_forms/Ar_ad_QC_Page.htm" class="link-card">
-            <i class="fa-solid fa-award"></i>
-            <span>نماذج التفتيش الفني ومراقبة الجودة</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_chem/Ar_ad_chem.htm" class="link-card">
-            <i class="fa-solid fa-flask"></i>
-            <span>المعالجة الكيميائية والمعايير البيئية</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Safety%20Health%20Page.htm" class="link-card">
-            <i class="fa-solid fa-hand-holding-heart"></i>
-            <span>السلامة والصحة المهنية</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_TB-SS+PS.htm" class="link-card">
-            <i class="fa-solid fa-newspaper"></i>
-            <span>النشرات الفنية</span>
-          </a>
-          <a href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_TD-SS+PS.htm" class="link-card">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <span>التعليمات الفنية والتوجيهات</span>
-          </a>
-          <a href="Ar_admin_inst/Ar_admin_inst.htm" class="link-card">
-            <i class="fa-solid fa-passport"></i>
-            <span>إرشادات وتعليمات إدارية</span>
-          </a>
-          <a href="Ar_gen_docs/Ar_Cranes_Page.htm" class="link-card">
-            <i class="fa-solid fa-truck-picker"></i>
-            <span>الأوناش والرفع</span>
-          </a>
-        </div>
-      </div>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="footer-section">
-      <p class="footer-copy">حقوق الطبع محفوظة &copy; الشركة القابضة لكهرباء مصر، قطاع تطوير نظم الصيانة ومراقبة الجودة 2026.</p>
-      <p class="footer-note">تم تطوير الصفحات وتحديثها بمعرفة إدارة الشئون الفنية بمنطقة كهرباء مصر الوسطى</p>
-    </footer>
-
-  </div>
-
-  <!-- Search Filter Javascript -->
-  <script>
+<div class="app-container">
+<!-- Top Bar with Contact Info and Language Toggle -->
+<div class="top-bar">
+<a class="lang-switch" href="../index.htm">
+<i class="fa-solid fa-globe"></i>
+<span>English Version</span>
+</a>
+</div>
+ قسم الرأس 
+<header class="header-section">
+<div class="header-text-left">
+<span class="org-hierarchy">وزارة الكهرباء والطاقة المتجددة</span>
+<h1 class="org-name">الشركة القابضة لكهرباء مصر</h1>
+<span class="org-subname">المنطقة الجنوبية - منطقة كهرباء مصر الوسطى - إدارة الشئون الفنية</span>
+</div>
+<div class="logo-container">
+<div class="logo-glow-wrapper">
+<img alt="EETC Logo" class="main-logo" src="../images/eetc_logo.jpg"/>
+</div>
+</div>
+<div class="header-text-right">
+<span class="org-hierarchy">قطاع تطوير نظم إجراءات الصيانة ومراقبة الجودة</span>
+<h2 class="org-name">نظام معلومات إجراءات الصيانة</h2>
+<span class="org-subname">الإدارة العامة لتطوير نظم إجراءات الصيانة</span>
+</div>
+</header>
+ أزرار قائمة التنقل 
+<nav class="main-nav">
+<a class="nav-btn" href="Ar_whatsnew/Ar_whatsnew.htm">
+<i class="fa-solid fa-bullhorn"></i>
+<span>ما هو الجديد</span>
+</a>
+<a class="nav-btn" href="Ar_about/docs%20status/Ar_status.htm">
+<i class="fa-solid fa-chart-line"></i>
+<span>موقف المستندات</span>
+</a>
+<a class="nav-btn" href="Ar_forms/A_form.htm">
+<i class="fa-solid fa-file-invoice"></i>
+<span>النماذج</span>
+</a>
+<a class="nav-btn" href="Ar_about/Ar_about.htm">
+<i class="fa-solid fa-circle-info"></i>
+<span>ما هو الـ MPIS</span>
+</a>
+<a class="nav-btn" href="Ar_admin_inst/Ar_admin_inst.htm">
+<i class="fa-solid fa-sliders"></i>
+<span>التعليمات الإدارية</span>
+</a>
+<a class="nav-btn" href="Ar_draf_docs/Ar_draf_doc.htm">
+<i class="fa-solid fa-file-signature"></i>
+<span>مسودة المستندات</span>
+</a>
+<a class="nav-btn" href="Ar_Coordinators/Ar_MPIS_Coord_main%20Page.htm">
+<i class="fa-solid fa-users-gear"></i>
+<span>المنسقون</span>
+</a>
+<a class="nav-btn" href="Ar_tech_resource/Ar_tech_resource.htm">
+<i class="fa-solid fa-folder-open"></i>
+<span>قاعدة البيانات</span>
+</a>
+</nav>
+<!-- Alert / Ticker Banner -->
+<div class="ticker-banner">
+<span class="ticker-label">تنبيه</span>
+<div class="ticker-content">
+<a href="Ar_whatsnew/Ar_whatsnew.htm">برجاء مراجعة "ما هو الجديد"! تم رفع أدلة الصيانة الجديدة وإرشادات الجودة المعتمدة.</a>
+</div>
+</div>
+<!-- Main Sector Cards -->
+<section class="sectors-container">
+<!-- Production -->
+<a class="sector-card" href="Ar_gen_docs/Ar_gen_Co.s.htm">
+<div class="sector-icon"><i class="fa-solid fa-industry"></i></div>
+<h3 class="sector-title">شركات الإنتاج</h3>
+<p class="sector-desc">الوصول لمستندات شركات الإنتاج وإرشادات صيانة الغلايات والتوربينات والمولدات.</p>
+</a>
+<!-- EETC (Highlight/Center) -->
+<a class="sector-card highlight" href="Ar_distr+Trans/Ar_Transm.%20Co._Page.html">
+<div class="sector-icon"><i class="fa-solid fa-tower-cell"></i></div>
+<h3 class="sector-title">الشركة المصرية لنقل الكهرباء</h3>
+<p class="sector-desc">مواصفات محطات المحولات، معايير الشبكة الموحدة، وخطوط النقل بمختلف المناطق.</p>
+</a>
+<!-- Distribution -->
+<a class="sector-card" href="Ar_distr+Trans/Ar_Distrib.Co._Page.html">
+<div class="sector-icon"><i class="fa-solid fa-network-wired"></i></div>
+<h3 class="sector-title">شركات التوزيع</h3>
+<p class="sector-desc">بروتوكولات شركات التوزيع، معايير اتزان الأحمال ومراقبة جودة التغذية الكهربائية.</p>
+</a>
+</section>
+<!-- Search and Filter Bar -->
+<div class="search-filter-section">
+<div class="search-wrapper">
+<i class="fa-solid fa-magnifying-glass search-icon"></i>
+<input class="search-input" id="search-input" onkeyup="filterLinks()" placeholder="ابحث عن المستندات الفنية والأنظمة الفرعية..." type="text"/>
+</div>
+</div>
+<!-- Technical Categories Grid -->
+<main class="categories-section">
+<!-- Substations & Equipment -->
+<div class="category-group" id="substations-group">
+<h3 class="category-group-header">
+<i class="fa-solid fa-bolt"></i>
+<a href="Ar_appr_docs/Ar_ad_subst/Ar_ad_subst.htm" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+<span>محطات المحولات والمعدات</span>
+<i class="fa-solid fa-chevron-left" style="font-size: 0.8em; opacity: 0.7;"></i>
+</a>
+</h3>
+<div class="links-grid">
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_CBs.htm">
+<i class="fa-solid fa-circle-dot"></i>
+<span>القواطع الكهربائية</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_Trafo.htm">
+<i class="fa-solid fa-circle-nodes"></i>
+<span>المحولات الكهربائية</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_tap_changers.htm">
+<i class="fa-solid fa-code-merge"></i>
+<span>مغيرات الجهد</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_DS_ES.htm">
+<i class="fa-solid fa-toggle-on"></i>
+<span>السكاكين والأرضي (DS+ES Switches)</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_CT_PT_LA.htm">
+<i class="fa-solid fa-scale-balanced"></i>
+<span>محولات التيار والجهد ومانعات الصواعق</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_Batteries.htm">
+<i class="fa-solid fa-battery-three-quarters"></i>
+<span>البطاريات والشواحن وموانع الانقطاع</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_Distrib_Board.htm">
+<i class="fa-solid fa-table-cells"></i>
+<span>لوحات التوزيع</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_condensers.htm">
+<i class="fa-solid fa-capsules"></i>
+<span>المكثفات الكهربائية</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_Busbars.htm">
+<i class="fa-solid fa-grip-lines"></i>
+<span>قضبان التوصيل</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_compressors.htm">
+<i class="fa-solid fa-gauge-high"></i>
+<span>الضواغط</span>
+</a>
+</div>
+</div>
+<!-- Power Generation Systems -->
+<div class="category-group" id="generation-group">
+<h3 class="category-group-header">
+<i class="fa-solid fa-gears"></i>
+<span>أنظمة توليد الطاقة</span>
+</h3>
+<div class="links-grid">
+<a class="link-card" href="Ar_gen_docs/Ar_Gas%20Turbines_docs%20Page.htm">
+<i class="fa-solid fa-wind"></i>
+<span>التوربينات الغازية والدورة المركبة</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Boilers_docs%20Page.htm">
+<i class="fa-solid fa-fire"></i>
+<span>الغلايات</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Turbines.htm">
+<i class="fa-solid fa-rotate"></i>
+<span>التوربينات</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Pumps_docs%20Page.htm">
+<i class="fa-solid fa-faucet-drip"></i>
+<span>الطلمبات</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Fans_docs%20Page.htm">
+<i class="fa-solid fa-fan"></i>
+<span>المراوح</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Governers.htm">
+<i class="fa-solid fa-compass-drafting"></i>
+<span>منظمات السرعة</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Air%20Heaters.htm">
+<i class="fa-solid fa-temperature-arrow-up"></i>
+<span>مسخنات الهواء</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Thermal%20aux.htm">
+<i class="fa-solid fa-sun"></i>
+<span>المساعدات الحرارية</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Generators%20Page.htm">
+<i class="fa-solid fa-lightbulb"></i>
+<span>المولدات</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/ad_subst/Ar_ad_dsl.htm">
+<i class="fa-solid fa-oil-can"></i>
+<span>محركات الديزل</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Valves.htm">
+<i class="fa-solid fa-sliders"></i>
+<span>المحابس</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Motors%20Page.htm">
+<i class="fa-solid fa-circle-nodes"></i>
+<span>المحركات الكهربائية</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Filters_docs%20Page.htm">
+<i class="fa-solid fa-filter"></i>
+<span>الفلاتر</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Hydraulic%20aux.htm">
+<i class="fa-solid fa-water"></i>
+<span>المساعدات الهيدروليكية</span>
+</a>
+</div>
+</div>
+<!-- Transmission, Control & Protection -->
+<div class="category-group" id="transmission-group">
+<h3 class="category-group-header">
+<i class="fa-solid fa-shield-halved"></i>
+<span>نقل الطاقة، التحكم والوقاية</span>
+</h3>
+<div class="links-grid">
+<a class="link-card" href="Ar_appr_docs/Ar_ad_pc/Ar_ad_pc.htm">
+<i class="fa-solid fa-user-shield"></i>
+<span>أجهزة الوقاية</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/ad_com/Ar_ad_com.htm">
+<i class="fa-solid fa-tower-broadcast"></i>
+<span>أجهزة الاتصالات</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Instruments_gen_docs%20Page.htm">
+<i class="fa-solid fa-gauge"></i>
+<span>أجهزة القياس والتحكم</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_trans/Ar_ad_trans.htm">
+<i class="fa-solid fa-route"></i>
+<span>الخطوط الهوائية</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_ad_Fire%20control.htm">
+<i class="fa-solid fa-fire-extinguisher"></i>
+<span>أجهزة ونظم الإطفاء</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_ad_aux.htm">
+<i class="fa-solid fa-shield-virus"></i>
+<span>الحماية الكاثودية</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/ad_cables/Ar_ad_cables.htm">
+<i class="fa-solid fa-square-rss"></i>
+<span>الكابلات الأرضية والبحرية</span>
+</a>
+</div>
+</div>
+<!-- Management, Standards & Directives -->
+<div class="category-group" id="management-group">
+<h3 class="category-group-header">
+<i class="fa-solid fa-folder-tree"></i>
+<span>الإدارة، المعايير والتوجيهات الفنية</span>
+</h3>
+<div class="links-grid">
+<a class="link-card" href="Ar_forms/Ar_ad_QC_Page.htm">
+<i class="fa-solid fa-award"></i>
+<span>نماذج التفتيش الفني ومراقبة الجودة</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_chem/Ar_ad_chem.htm">
+<i class="fa-solid fa-flask"></i>
+<span>المعالجة الكيميائية والمعايير البيئية</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Safety%20Health%20Page.htm">
+<i class="fa-solid fa-hand-holding-heart"></i>
+<span>السلامة والصحة المهنية</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_TB-SS+PS.htm">
+<i class="fa-solid fa-newspaper"></i>
+<span>النشرات الفنية</span>
+</a>
+<a class="link-card" href="Ar_appr_docs/Ar_ad_subst/new_pages/Ar_ad_TD-SS+PS.htm">
+<i class="fa-solid fa-circle-exclamation"></i>
+<span>التعليمات الفنية والتوجيهات</span>
+</a>
+<a class="link-card" href="Ar_admin_inst/Ar_admin_inst.htm">
+<i class="fa-solid fa-passport"></i>
+<span>إرشادات وتعليمات إدارية</span>
+</a>
+<a class="link-card" href="Ar_gen_docs/Ar_Cranes_Page.htm">
+<i class="fa-solid fa-truck-picker"></i>
+<span>الأوناش والرفع</span>
+</a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer-section">
+<p class="footer-copy">حقوق الطبع محفوظة © الشركة القابضة لكهرباء مصر، قطاع تطوير نظم الصيانة ومراقبة الجودة 2026.</p>
+<p class="footer-note">تم تطوير الصفحات وتحديثها بمعرفة إدارة الشئون الفنية بمنطقة كهرباء مصر الوسطى</p>
+</footer>
+</div>
+<!-- Search Filter Javascript -->
+<script>
     function filterLinks() {
       const query = document.getElementById('search-input').value.toLowerCase().trim();
       const groups = document.querySelectorAll('.category-group');

@@ -5,8 +5,7 @@ from bs4 import BeautifulSoup
 
 cwd = r'c:\Users\sameh\OneDrive\المستندات\githup\mpis\misb'
 dirs_to_scan = [
-    os.path.join(cwd, r'arabic_web\Boilers'),
-    os.path.join(cwd, r'arabic_web\Ar_app_gen')
+    os.path.join(cwd, r'arabic_web')
 ]
 
 unique_strings = set()

@@ -13,8 +13,7 @@ with open(mapping_file, 'r', encoding='utf-8') as f:
 sorted_mapping = dict(sorted(mapping.items(), key=lambda item: len(item[0]), reverse=True))
 
 dirs_to_scan = [
-    os.path.join(cwd, r'arabic_web\Boilers'),
-    os.path.join(cwd, r'arabic_web\Ar_app_gen')
+    os.path.join(cwd, r'arabic_web')
 ]
 
 for d in dirs_to_scan:
